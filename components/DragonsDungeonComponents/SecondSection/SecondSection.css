@@ -1,0 +1,89 @@
+#second-section {
+  display: grid;
+  width: 100%;
+  padding: 100px 300px;
+  justify-content: center;
+  grid-template-areas: "title title title" "product1 product2 product3" "product4 product5 product6";
+  grid-template-columns: 33% 33% 33%;
+}
+#second-section h3 {
+  grid-area: title;
+}
+#second-section #product-1 {
+  grid-area: product1;
+}
+#second-section #product-2 {
+  grid-area: product2;
+}
+#second-section #product-3 {
+  grid-area: product3;
+}
+#second-section #product-4 {
+  grid-area: product4;
+}
+#second-section #product-5 {
+  grid-area: product5;
+}
+#second-section .product-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  left: 25%;
+  top: 25%;
+  padding: 25px 50px;
+}
+#second-section .product-card .container {
+  display: flex;
+  overflow-y: hidden;
+  height: 300px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+#second-section .product-card .container h4 {
+  margin: 0;
+  height: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-section .product-card .container img {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 260px;
+  min-height: 260px;
+  width: auto;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+#second-section .product-card .container p {
+  font-size: 1.333rem;
+}
+#second-section .product-card-active {
+  border-radius: 10px;
+  position: fixed;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 50%;
+  background-color: #fcfcfc;
+  border: 1px solid rgb(252, 252, 252);
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+#second-section .product-card-active .container {
+  height: auto;
+}
+#second-section .product-card-active .container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=SecondSection.css.map */

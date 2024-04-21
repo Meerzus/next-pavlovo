@@ -1,0 +1,98 @@
+#dragonsDungeonPage {
+  display: flex;
+  flex-direction: column;
+}
+#dragonsDungeonPage #leadForm {
+  display: none;
+}
+#dragonsDungeonPage .leadForm-active {
+  display: flex !important;
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+}
+#dragonsDungeonPage .leadForm-active .lead-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.75);
+  cursor: pointer;
+  display: flex;
+}
+#dragonsDungeonPage .leadForm-active form {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: row;
+  width: 40%;
+  height: 50%;
+  background-color: rgb(252, 252, 252);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+#dragonsDungeonPage .leadForm-active form img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+#dragonsDungeonPage .leadForm-active form .container {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+#dragonsDungeonPage .leadForm-active form .container button:first-child {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+#dragonsDungeonPage .leadForm-active form .container button:first-child span {
+  min-width: 30px;
+  min-height: 3px;
+  background-color: rgb(31, 31, 31);
+  rotate: 45deg;
+  position: absolute;
+}
+#dragonsDungeonPage .leadForm-active form .container button:first-child span:first-child {
+  rotate: -45deg;
+}
+#dragonsDungeonPage .leadForm-active form .container button:last-child {
+  width: 100%;
+  margin-top: 275px;
+}
+#dragonsDungeonPage .leadForm-active form .container p {
+  width: 100%;
+  margin: 40px 0 5px;
+  font-weight: 700;
+  font-size: 1.333rem;
+}
+#dragonsDungeonPage .leadForm-active form .container p:after {
+  content: "*";
+  color: red;
+  font-weight: 400;
+  margin-left: 2px;
+}
+#dragonsDungeonPage .leadForm-active form .container input {
+  border: 2px solid rgb(31, 31, 31);
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 1.333rem;
+}
+
+/*# sourceMappingURL=DragonsDungeonPage.css.map */

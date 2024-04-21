@@ -1,0 +1,165 @@
+@import "../../components/styleVariables"
+
+#dragonsDungeonPage
+  display: flex
+  flex-direction: column
+  scroll-behavior: smooth
+  scroll-padding: 100px
+  #leadForm, #calculateLeadForm
+    display: none
+    z-index: 999
+  .leadForm-active
+    display: flex !important
+    position: fixed
+    width: 100dvw
+    height: 100dvh
+    top: 0
+    left: 0
+    z-index: 999
+    .lead-background
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba($black, .75)
+      cursor: pointer
+      display: flex
+      z-index: 999
+    form
+      display: flex
+      border-radius: 10px
+      overflow: hidden
+      flex-direction: row
+      width: 1000px
+      height: 500px
+      background-color: $white
+      position: fixed
+      top: 50%
+      left: 50%
+      translate: -50% -50%
+      z-index: 1000
+      @media only screen and (max-width: $bp-tablet-landscape-up)
+        width: 90%
+      img
+        width: 50%
+        height: 100%
+        object-fit: cover
+        @media only screen and (max-width: $bp-tablet-landscape-up)
+          display: none
+      .container
+        width: 50%
+        height: 100%
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: end
+        @media only screen and (max-width: $bp-tablet-landscape-up)
+          width: 100%
+        button:first-child
+          width: 50px
+          min-height: 50px
+          background-color: transparent
+          border: none
+          position: fixed
+          padding: 0
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: end
+          span
+            min-width: 30px
+            min-height: 3px
+            background-color: $black
+            rotate: 45deg
+            position: absolute
+            &:first-child
+              rotate: -45deg
+        button:last-child
+          width: 100%
+          margin-top: auto
+        p
+          width: 100%
+          margin: 40px 0 5px
+          font-weight: 700
+          font-size: 1.333rem
+          &:after
+            content: '*'
+            color: red
+            font-weight: 400
+            margin-left: 2px
+        input
+          border: 2px solid $black
+          width: 100%
+          height: 50px
+          padding: 10px 15px
+          font-size: 1.333rem
+    #calculateForm
+      .container
+        width: 50%
+        height: 500px
+        overflow-y: scroll
+        scroll-behavior: smooth
+        scroll-padding: 70px
+        @media only screen and (max-width: $bp-tablet-landscape-up)
+          width: 100%
+        #productSection
+          margin-top: 50px
+        #productSection, #amountOfPeopleSection, #ageSection, #dateSection, #callMeSection
+          width: 100%
+          min-height: 410px
+          margin-bottom: 150px
+          padding: 20px 50px 20px 10px
+          display: flex
+          flex-direction: column
+          justify-content: start
+          font-size: 1.333rem
+          font-weight: 700
+          p
+            margin-top: 0
+          h5
+            width: 100%
+            text-align: start
+            margin: 0 0 10px
+          select
+            min-height: 50px
+            border: 2px solid $yellow
+            padding: 10px 20px
+            font-size: 1.333rem
+          a
+            margin-top: auto
+            width: 100%
+            min-height: 50px
+            font-size: 1.333rem
+            font-weight: 700
+            background-color: $yellow
+            border: 2px solid $yellow
+            border-radius: 5px
+            padding: 10px
+            text-align: center
+          input[type='range']
+            -webkit-appearance: none
+            -moz-appearance: none
+            outline: none
+            height: 10px
+            margin-bottom: 25px
+            border-radius: 10px
+            padding: 0
+            border: 1px solid $yellow
+            background-color: $yellow
+            cursor: pointer
+            //background: linear-gradient(to right, $yellow 50%, $yellow 0%, $white 50%, $white 100%)
+            &::-webkit-slider-thumb
+              -webkit-appearance: none
+              width: 20px
+              height: 20px
+              background-image: radial-gradient(circle, $white 25%, $yellow 75%)
+              border-radius: 50%
+              box-shadow: 0 0 10px 0px rgba($yellow, 1)
+        #amountOfPeopleSection
+          align-items: center
+        #callMeSection
+          margin-bottom: 0
+          button
+            margin-top: auto

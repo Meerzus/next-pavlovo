@@ -1,0 +1,48 @@
+#first-section {
+  display: grid;
+  min-height: 100dvh;
+  height: 100dvh;
+  grid-template-areas: "title logo logo" "title logo logo" "desc logo logo" "link logo logo";
+  padding: 100px 225px;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: repeat(3, 2fr);
+  align-content: start;
+  background-image: url("../../../public/images/dragons-dungeon/hero-banner.jpg");
+  background-size: cover;
+  color: rgb(252, 252, 252);
+  flex-wrap: wrap;
+}
+#first-section h1 {
+  text-align: left;
+  height: 200px;
+  text-shadow: 2px 2px 5px rgb(31, 31, 31);
+  grid-area: title;
+}
+#first-section h5 {
+  text-align: left;
+  margin-top: 0;
+  text-shadow: 2px 2px 5px rgb(31, 31, 31);
+  grid-area: desc;
+}
+#first-section img {
+  height: auto;
+  object-fit: contain;
+  grid-area: logo;
+}
+#first-section a {
+  grid-area: link;
+  width: 50%;
+  color: rgb(31, 31, 31);
+  background-color: rgb(245, 209, 81);
+  border-radius: 5px;
+  outline: 3px solid rgb(245, 209, 81);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
+}
+#first-section a:hover {
+  background-color: transparent;
+  color: rgb(245, 209, 81);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=FirstSection.css.map */

@@ -1,0 +1,48 @@
+@import "../../styleVariables"
+
+#about-us
+  width: 100%
+  min-height: 50dvw
+  background-color: $black
+  color: $white
+  display: flex
+  flex-direction: row
+  justify-content: start
+  align-items: center
+  @media only screen and (max-width: $bp-tablet-landscape-up)
+    flex-direction: column
+  @media only screen and (max-width: $bp-phone)
+    padding: 100px 0
+    button
+      padding: 5px
+      img
+        width: auto
+        height: 100%
+  img
+    width: 50%
+    display: flex
+    height: 100%
+    min-height: 100%
+    object-fit: cover
+    @media only screen and (max-width: $bp-tablet-landscape-up)
+      width: 100%
+  .container
+    display: flex
+    flex-direction: column
+    width: 50%
+    height: auto
+    padding: 100px
+    @media only screen and (max-width: $bp-tablet-landscape-up)
+      width: 100%
+    @media only screen and (max-width: $bp-phone)
+      padding: 20px  20px
+    h1
+      margin: 0
+    p
+      font-size: 1.333rem
+      line-height: 2rem
+      margin-bottom: 20px
+    button
+      color: $black
+      &:hover
+        color: $yellow
