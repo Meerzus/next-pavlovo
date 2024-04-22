@@ -1,45 +1,129 @@
 #first-section {
-  display: grid;
+  display: flex;
   min-height: 100dvh;
   height: 100dvh;
-  grid-template-areas: "title logo logo" "title logo logo" "desc logo logo" "link logo logo";
   padding: 100px 225px;
-  grid-template-columns: 60% 20% 20%;
-  grid-template-rows: repeat(3, 2fr);
-  align-content: start;
-  background-image: url("../../../public/images/dragons-dungeon/hero-banner.jpg");
-  background-size: cover;
+  padding-right: 10px;
   color: rgb(252, 252, 252);
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 1600px) {
+  #first-section {
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #first-section {
+    padding: 100px 10px;
+    align-items: end;
+    background-image: url("../../../public/images/dragons-dungeon/hero-banner-small.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+#first-section .first-section-background {
+  display: flex;
+  position: absolute;
+  background-color: rgb(31, 31, 31);
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
+}
+#first-section .first-section-background img {
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
 }
 #first-section h1 {
-  text-align: left;
-  height: 200px;
-  text-shadow: 2px 2px 5px rgb(31, 31, 31);
-  grid-area: title;
-}
-#first-section h5 {
-  text-align: left;
-  margin-top: 0;
-  text-shadow: 2px 2px 5px rgb(31, 31, 31);
-  grid-area: desc;
-}
-#first-section img {
+  text-align: center;
   height: auto;
-  object-fit: contain;
-  grid-area: logo;
+  text-shadow: 2px 2px 5px rgb(31, 31, 31);
+  width: 55%;
 }
-#first-section a {
-  grid-area: link;
+@media only screen and (max-width: 900px) {
+  #first-section h1 {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+}
+#first-section h3 {
   width: 50%;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(31, 31, 31);
+  margin-top: 100px;
+}
+@media only screen and (max-width: 1600px) {
+  #first-section h3 {
+    margin-top: auto;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #first-section h3 {
+    width: 75%;
+    text-align: right;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #first-section h3 {
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.75rem;
+  }
+}
+#first-section a, #first-section button {
+  margin-top: 50px;
+  width: 400px;
+  height: 75px;
   color: rgb(31, 31, 31);
   background-color: rgb(245, 209, 81);
   border-radius: 5px;
   outline: 3px solid rgb(245, 209, 81);
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
+  margin-right: 200px;
+  padding: 0;
 }
-#first-section a:hover {
+@media only screen and (max-width: 1600px) {
+  #first-section a, #first-section button {
+    margin-top: auto;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #first-section a, #first-section button {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #first-section a, #first-section button {
+    margin-top: 10px;
+    width: 40%;
+    min-height: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+}
+#first-section a h4, #first-section button h4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+@media only screen and (max-width: 900px) {
+  #first-section a h4, #first-section button h4 {
+    font-size: 0.75rem;
+  }
+}
+#first-section a:hover, #first-section button:hover {
   background-color: transparent;
   color: rgb(245, 209, 81);
   border-radius: 10px;

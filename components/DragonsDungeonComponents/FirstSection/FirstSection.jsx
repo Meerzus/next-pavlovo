@@ -7,6 +7,7 @@ import logo from '@/public/images/logo.png'
 import banner from '@/public/images/dragons-dungeon/hero-banner.jpg'
 import banner_small from '@/public/images/dragons-dungeon/hero-banner-small.jpg'
 import Link from "next/link";
+import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 
 function FirstSection(props) {
     return (
@@ -23,7 +24,9 @@ function FirstSection(props) {
 
             {/*<Image src={logo} alt={'Подземелье Дракона'} width={640} height={480}/>*/}
 
-            <Link href={'tel:+79101448287'}><h4>Связаться с нами</h4></Link>
+            {/*<Link href={'tel:+79101448287'}><h4>Связаться с нами</h4></Link>*/}
+
+            <LeadTriggerButton text={'Оставить заявку'}/>
         </section>
     );
 }

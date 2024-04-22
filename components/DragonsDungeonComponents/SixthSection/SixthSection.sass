@@ -46,6 +46,7 @@
       width: fit-content
       flex-direction: column
       color: $black
+      margin-bottom: 20px
       @media only screen and (max-width: $bp-phone)
         font-size: 1rem
       &:nth-child(3)
@@ -55,11 +56,13 @@
       &:after
         content: ''
         height: 5px
-        width: 0px
+        width: 100%
         background-color: $black
         display: flex
         transition-duration: $transitionDuration
         transition-timing-function: $transitionTimingFunction
+        @media only screen and (max-width: $bp-phone)
+          height: 3px
       &:nth-child(7)
         &:after
           background-color: #0076fd

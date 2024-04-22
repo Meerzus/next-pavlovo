@@ -7,12 +7,14 @@
   align-items: center
   flex-direction: column
   padding: 100px 200px
+  @media only screen and (max-width: $bp-tablet)
+    padding: 100px
   @media only screen and (max-width: $bp-phone)
     padding: 100px 20px
     h1
       font-size: 1.333rem
   .container
-    width: 70%
+    width: 90%
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -56,6 +58,7 @@
       p
         font-size: 1.333rem
         min-height: 160px
+        font-weight: 300
         @media only screen and (max-width: $bp-tablet-landscape-up)
           min-height: 100px
         @media only screen and (max-width: $bp-phone)

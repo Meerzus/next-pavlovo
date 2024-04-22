@@ -76,17 +76,18 @@ footer
     display: flex
     flex-direction: column
     justify-content: center
-    gap: 5px
+    //gap: 5px
     align-items: start
     padding: 0 50px
     @media only screen and (max-width: $bp-tablet-landscape-up)
       width: 100%
-      gap: 25px
+      //gap: 25px
       align-items: center
     @media only screen and (max-width: $bp-phone)
-      gap: 10px
+      //gap: 10px
   a
     font-size: 1.333rem
+    margin-bottom: 20px
     @media only screen and (max-width: $bp-tablet-landscape-up)
       font-size: 1.777rem
       text-align: center
@@ -95,12 +96,15 @@ footer
     &:after
       content: ''
       height: 5px
-      width: 0px
-      background-color: $yellow
+      width: 100%
+      background-color: $white
       display: flex
       transition-duration: $transitionDuration
       transition-timing-function: $transitionTimingFunction
+      @media only screen and (max-width: $bp-phone)
+        height: 3px
     &:hover
       color: $yellow
       &:after
+        background-color: $yellow
         width: 100%

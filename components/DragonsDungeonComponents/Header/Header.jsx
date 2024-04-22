@@ -7,6 +7,7 @@ import logo from '@/public/images/logo.png'
 import Link from "next/link";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 import NavToggle from "@/components/DragonsDungeonComponents/Header/NavToggle";
+import CallMeHeaderNav from "@/components/DragonsDungeonComponents/Header/CallMeHeaderNav";
 
 function Header(props) {
     return (
@@ -19,6 +20,7 @@ function Header(props) {
                 <Link href={'#chooseUsSection'}>Преимущества</Link>
                 <Link href={'#program'}>Программа</Link>
                 <Link href={'#contacts'}>Контакты</Link>
+                <CallMeHeaderNav/>
             </nav>
 
             <LeadTriggerButton text={'Перезвоните мне'}/>

@@ -30,7 +30,7 @@ function ProductCard({product}) {
             {/*    }}>подробнее</button>*/}
             {/*}*/}
 
-            <LeadTriggerButton text={'расчитать стоимость'}/>
+            <LeadTriggerButton text={'Рассчитать стоимость'}/>
         </div>
     );
 }
