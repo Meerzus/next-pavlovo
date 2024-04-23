@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
-      <change afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/Comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/global.sass" afterDir="false" />
-    </list>
+    <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +57,7 @@
       <workItem from="1713713586745" duration="2005000" />
       <workItem from="1713808594725" duration="405000" />
       <workItem from="1713811791972" duration="603000" />
-      <workItem from="1713887715881" duration="5608000" />
+      <workItem from="1713887715881" duration="5641000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -110,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713808903909</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- final">
+      <option name="closed" value="true" />
+      <created>1713893378249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713893378250</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
