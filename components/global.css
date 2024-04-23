@@ -13,10 +13,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-family: "Montserrat", sans-serif;
@@ -40,31 +42,96 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+  scale: 0.8;
+}
+
+p {
+  scale: 0.9;
 }
 
 h1 {
   font-size: 4.21rem;
   margin: 3.158rem 0;
 }
+@media only screen and (max-width: 1600px) {
+  h1 {
+    font-size: 3.158rem;
+    margin: 2.369rem 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.369rem;
+    margin: 1.777rem 0;
+  }
+}
 
 h2 {
   font-size: 3.158rem;
   margin: 2.369rem 0;
+}
+@media only screen and (max-width: 1600px) {
+  h2 {
+    font-size: 2.369rem;
+    margin: 1.777rem 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 1.777rem;
+    margin: 1.333rem 0;
+  }
 }
 
 h3 {
   font-size: 2.369rem;
   margin: 1.777rem 0;
 }
+@media only screen and (max-width: 1600px) {
+  h3 {
+    font-size: 1.777rem;
+    margin: 1.333rem 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 1.333rem;
+    margin: 0.75rem 0;
+  }
+}
 
 h4 {
   font-size: 1.777rem;
   margin: 1.333rem 0;
 }
+@media only screen and (max-width: 1600px) {
+  h4 {
+    font-size: 1.333rem;
+    margin: 0.75rem 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
 
 h5 {
   font-size: 1.333rem;
   margin: 0.75rem 0;
+}
+@media only screen and (max-width: 1600px) {
+  h5 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h5 {
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+  }
 }
 
 small {

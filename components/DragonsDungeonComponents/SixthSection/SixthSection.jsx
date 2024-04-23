@@ -7,7 +7,7 @@ import DragonMap from "@/components/DragonsDungeonComponents/SixthSection/Dragon
 import Image from "next/image";
 
 import VK from '@/public/images/icons/VK.svg'
-
+// https://yandex.ru/maps/-/CDVzf4oW
 function SixthSection(props) {
     return (
         <section id={'contacts'}>

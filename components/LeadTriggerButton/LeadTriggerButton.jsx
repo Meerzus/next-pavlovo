@@ -7,12 +7,15 @@ import './LeadTriggerButton.sass'
 import Image from "next/image";
 
 import phone from '@/public/images/dragons-dungeon/svg/Phone.svg'
+import Link from "next/link";
 
 function LeadTriggerButton({text}) {
 
     const [windowSize, setWindowSize] = useState(false)
+    const [width, setWidth] = useState(0)
 
     useEffect(() => {
+        setWidth(window.innerWidth)
         if (window.innerWidth > 1200) {
             setWindowSize(true)
         }
@@ -26,12 +29,14 @@ function LeadTriggerButton({text}) {
         </button>
     ) : (
         <button onClick={() => {
-            document.getElementById('leadForm').classList.add('leadForm-active')
+            if (width > 1200) {
+                document.getElementById('leadForm').classList.add('leadForm-active')
+            }
         }} id={'call-btn'}>
             {windowSize && text}
             {
                 !windowSize &&
-                <Image alt={'Позвонить'} src={phone} width={48} height={48}/>
+                <Link href={'tel:+79101448287'}><Image alt={'Позвонить'} src={phone} width={48} height={48}/></Link>
             }
         </button>
     );

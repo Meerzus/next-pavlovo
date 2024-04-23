@@ -1,31 +1,64 @@
-#second-section {
+#events {
   display: grid;
   width: 100%;
   padding: 100px 300px;
   justify-content: center;
   grid-template-areas: "title title title" "product1 product2 product3" "product4 product5 product6";
   grid-template-columns: 33% 33% 33%;
+  gap: 20px;
 }
-#second-section h3 {
+@media only screen and (max-width: 1600px) {
+  #events {
+    padding: 100px 150px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #events {
+    grid-template-areas: "title" "product1" "product2" "product3" "product4" "product5" "product6";
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #events {
+    padding: 100px 20px;
+  }
+}
+#events #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 997;
+  display: none;
+}
+#events .background-active {
+  display: flex !important;
+  cursor: pointer;
+  background-color: rgba(31, 31, 31, 0.5);
+  width: 100dvw;
+  height: 100dvh;
+}
+#events h3 {
   grid-area: title;
 }
-#second-section #product-1 {
+#events #product-1 {
   grid-area: product1;
 }
-#second-section #product-2 {
+#events #product-2 {
   grid-area: product2;
 }
-#second-section #product-3 {
+#events #product-3 {
   grid-area: product3;
 }
-#second-section #product-4 {
+#events #product-4 {
   grid-area: product4;
 }
-#second-section #product-5 {
+#events #product-5 {
   grid-area: product5;
 }
-#second-section .product-card {
+#events .product-card {
   display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(31, 31, 31, 0.25);
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +67,7 @@
   top: 25%;
   padding: 25px 50px;
 }
-#second-section .product-card .container {
+#events .product-card .container {
   display: flex;
   overflow-y: hidden;
   height: 300px;
@@ -42,28 +75,46 @@
   justify-content: start;
   align-items: center;
   margin-bottom: 25px;
+  cursor: pointer;
 }
-#second-section .product-card .container h4 {
+#events .product-card .container h4 {
   margin: 0;
-  height: 40px;
-  min-height: 40px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#second-section .product-card .container img {
+#events .product-card .container .image {
+  height: 260px;
+  min-height: 260px;
+  width: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+#events .product-card .container .image img {
   border-radius: 10px;
   overflow: hidden;
   height: 260px;
   min-height: 260px;
   width: auto;
   object-fit: cover;
-  margin-bottom: 25px;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
 }
-#second-section .product-card .container p {
+#events .product-card .container .image:hover img {
+  scale: 1.1;
+}
+#events .product-card .container p {
   font-size: 1.333rem;
 }
-#second-section .product-card-active {
+#events .product-card button {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+#events .product-card-active {
+  z-index: 997;
   border-radius: 10px;
   position: fixed;
   justify-content: space-evenly;
@@ -77,13 +128,52 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-#second-section .product-card-active .container {
+@media only screen and (max-width: 1600px) {
+  #events .product-card-active {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #events .product-card-active {
+    width: 95%;
+    translate: -50% -40%;
+    padding: 20px;
+    max-height: calc(100dvh - 125px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(245, 209, 81) rgb(252, 252, 252);
+  }
+}
+#events .product-card-active .container {
   height: auto;
 }
-#second-section .product-card-active .container img {
+@media only screen and (max-width: 900px) {
+  #events .product-card-active .container h4 {
+    min-height: 40px;
+    height: 40px;
+  }
+}
+#events .product-card-active .container .image {
   width: 100%;
-  height: auto;
+  min-height: 350px;
+}
+@media only screen and (max-width: 900px) {
+  #events .product-card-active .container .image {
+    min-height: 200px;
+    height: 200px;
+  }
+}
+#events .product-card-active .container .image img {
+  width: 100%;
+  height: 350px;
   object-fit: cover;
+  object-position: center 25%;
+}
+@media only screen and (max-width: 900px) {
+  #events .product-card-active .container .image img {
+    min-height: 200px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=SecondSection.css.map */

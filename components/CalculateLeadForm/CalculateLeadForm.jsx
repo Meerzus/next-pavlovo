@@ -239,6 +239,8 @@ function CalculateLeadForm(props) {
                     <div id="optionSection">
                         <h4>чем хотите дополнить праздник?</h4>
 
+                        <h5>(выберите один или несколько)</h5>
+
                         <div className={'radio-item'}
                              onClick={(e) => setOptions(prevState => {
                                  if (!options.includes(e.target.value)) {
@@ -282,7 +284,7 @@ function CalculateLeadForm(props) {
                     </div>
 
                     <div id="callMeSection">
-                        <h5>Оставьте Ваш номер телефона, а мы рассчитаем стоимость мероприятия и перезвоним!</h5>
+                        <span>Оставьте Ваш номер телефона, а мы рассчитаем стоимость мероприятия и перезвоним!</span>
 
                         <p>Ваше имя</p>
                         <input type="text" value={name} onChange={e => {
@@ -306,15 +308,9 @@ function CalculateLeadForm(props) {
                     </div>
 
                     <div id="thankYouSection">
-                        <h4>Готово!</h4>
+                        <h4>Готово!</h4><br/>
 
-                        <h5>Мы обязательно свяжемся с Вами для уточнения деталей!</h5>
-
-                        <br/>
-                        <br/>
-                        <br/>
-
-                        <h5>При внесении оплаты за сутки — наполнение на Ваш выбор в подарок!</h5>
+                        <h4>Спасибо за уделенное время!</h4>
 
                         <button
                                 onClick={(e) => {

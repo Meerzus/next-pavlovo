@@ -2,7 +2,7 @@
   display: flex;
   align-items: start;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 100px 300px;
 }
 @media only screen and (max-width: 1600px) {
@@ -28,6 +28,10 @@
   #contacts h1 {
     font-size: 1.333rem;
   }
+}
+#contacts h2, #contacts h3 {
+  width: 100%;
+  margin-bottom: 0;
 }
 #contacts .item {
   display: flex;
@@ -74,10 +78,12 @@
   flex-direction: column;
   color: rgb(31, 31, 31);
   margin-bottom: 20px;
+  translate: 30px 0;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item a {
     font-size: 1rem;
+    translate: 20px 0;
   }
 }
 #contacts .item a:nth-child(3) {

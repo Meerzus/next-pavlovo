@@ -10,6 +10,7 @@ import balloons from '@/public/images/dragons-dungeon/svg/balloons.svg'
 import guard from '@/public/images/dragons-dungeon/svg/guard.svg'
 import Image from "next/image";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
+import Comments from "@/components/DragonsDungeonComponents/ChooseUsSection/Comments";
 
 const data = [
     {
@@ -45,7 +46,7 @@ const data = [
     {
         id: 6,
         title: 'Качество и безопасность',
-        text: 'В "Подземелье Дракона" мы гарантируем высокое качество проведения мероприятий и вашу безопасность. Мы работаем для того, чтобы вы ушли с нами только с положительными эмоциями и впечатлениями!',
+        text: 'В "Подземелье Дракона" мы гарантируем высокое качество проведения мероприятий и вашу безопасность. Мы работает для того, чтобы Вы  получило только положительные эмоции и впечатления!',
         icon: guard,
     },
 ]
@@ -66,6 +67,10 @@ function ChooseUsSection(props) {
                     })
                 }
             </div>
+
+            <h2>А вот что говорят наши клиенты</h2>
+
+            <Comments/>
 
             <LeadTriggerButton text={'Оставить заявку'}/>
         </section>

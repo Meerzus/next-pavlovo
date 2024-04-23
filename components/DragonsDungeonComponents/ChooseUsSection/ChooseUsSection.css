@@ -19,6 +19,10 @@
     font-size: 1.333rem;
   }
 }
+#chooseUsSection h2, #chooseUsSection h3 {
+  width: 100%;
+  margin-bottom: 0;
+}
 #chooseUsSection .container {
   width: 90%;
   display: flex;
