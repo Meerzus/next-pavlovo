@@ -106,15 +106,15 @@
         height: 100%
         overflow-y: scroll
         scroll-behavior: smooth
-        scroll-padding: 70px
+        scroll-padding: 20px
         @media only screen and (max-width: $bp-tablet-landscape-up)
           width: 100%
         #productSection
-          margin-top: 50px
+          //margin-top: 50px
         #productSection, #amountOfPeopleSection, #ageSection, #dateSection, #callMeSection, #optionSection, #thankYouSection
           width: 100%
-          min-height: 670px
-          margin-bottom: 150px
+          min-height: 100%
+          margin-bottom: 100px
           padding: 0 50px 20px 10px
           display: flex
           flex-direction: column
@@ -197,6 +197,14 @@
               border-radius: 50%
               box-shadow: 0 0 10px 0px rgba($yellow, 1)
         #callMeSection
+          h6, h5
+            margin: 0 0 10px
+            text-align: left
+            scale: 1
+          h6
+            color: gray
+          p
+            scale: 1
           input
             width: 100%
             height: 50px

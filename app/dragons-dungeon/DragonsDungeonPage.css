@@ -131,20 +131,17 @@
   height: 100%;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scroll-padding: 70px;
+  scroll-padding: 20px;
 }
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container {
     width: 100%;
   }
 }
-#dragonsDungeonPage .leadForm-active #calculateForm .container #productSection {
-  margin-top: 50px;
-}
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection {
   width: 100%;
-  min-height: 670px;
-  margin-bottom: 150px;
+  min-height: 100%;
+  margin-bottom: 100px;
   padding: 0 50px 20px 10px;
   display: flex;
   flex-direction: column;
@@ -248,6 +245,17 @@
   background-image: radial-gradient(circle, rgb(252, 252, 252) 25%, rgb(245, 209, 81) 75%);
   border-radius: 50%;
   box-shadow: 0 0 10px 0px #f5d151;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h6, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h5 {
+  margin: 0 0 10px;
+  text-align: left;
+  scale: 1;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h6 {
+  color: gray;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p {
+  scale: 1;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection input {
   width: 100%;
