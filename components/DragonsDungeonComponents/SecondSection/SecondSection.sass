@@ -45,13 +45,13 @@
     box-shadow: 0 5px 10px 0 rgba($black, 0.25)
     width: 100%
     align-items: center
-    justify-content: space-between
+    justify-content: center
     flex-wrap: wrap
     left: 25%
     top: 25%
     //translate: -50% -40%
     //border: 1px solid red
-    padding: 25px 50px
+    padding: 25px 0
     .container
       display: flex
       overflow-y: hidden
@@ -64,14 +64,15 @@
       h4
         margin: 0
         //height: 80px
-        min-height: 80px
+        min-height: 40px
         display: flex
         align-items: center
         justify-content: center
+        font-size: 1.25rem
       .image
         height: 260px
         min-height: 260px
-        width: auto
+        width: 80%
         overflow: hidden
         border-radius: 10px
         margin-bottom: 25px
@@ -90,18 +91,20 @@
       p
         font-size: 1.333rem
     button
-      width: 100%
-      font-size: .9rem
+      width: 80%
+      font-size: .75rem
+      padding: 0
       font-weight: 700
   .product-card-active
     z-index: 997
     border-radius: 10px
     position: fixed
     justify-content: space-evenly
-    top: 50%
+    top: 55%
     left: 50%
     translate: -50% -50%
     width: 50%
+    padding: 10px 0
     background-color: rgba($white, 1)
     border: 1px solid $white
     box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.25)
@@ -113,26 +116,25 @@
       width: 70%
     @media only screen and (max-width: $bp-phone)
       width: 95%
-      translate: -50% -40%
+      translate: -50% -50%
       padding: 20px
-      max-height: calc(100dvh - 125px)
+      max-height: calc(100dvh - 150px)
       overflow-y: scroll
       scrollbar-width: thin
       scrollbar-color: $yellow $white
     .container
       height: auto
+      margin-bottom: 0
       @media only screen and (max-width: $bp-phone)
         //max-height: calc(100dvh - 150px)
         //overflow-y: scroll
         h4
           min-height: 40px
           height: 40px
-        p
-          //max-height: 100px
-          //overflow-y: scroll
       .image
-        width: 100%
-        min-height: 350px
+        width: 90%
+        min-height: 250px
+        margin-bottom: 0
         @media only screen and (max-width: $bp-phone)
           min-height: 200px
           height: 200px

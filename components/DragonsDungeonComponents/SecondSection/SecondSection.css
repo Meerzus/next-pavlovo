@@ -7,7 +7,7 @@
   grid-template-columns: 33% 33% 33%;
   gap: 20px;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #events {
     padding: 100px 150px;
   }
@@ -61,11 +61,11 @@
   box-shadow: 0 5px 10px 0 rgba(31, 31, 31, 0.25);
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   left: 25%;
   top: 25%;
-  padding: 25px 50px;
+  padding: 25px 0;
 }
 #events .product-card .container {
   display: flex;
@@ -79,15 +79,16 @@
 }
 #events .product-card .container h4 {
   margin: 0;
-  min-height: 80px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.25rem;
 }
 #events .product-card .container .image {
   height: 260px;
   min-height: 260px;
-  width: auto;
+  width: 80%;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -109,8 +110,9 @@
   font-size: 1.333rem;
 }
 #events .product-card button {
-  width: 100%;
-  font-size: 0.9rem;
+  width: 80%;
+  font-size: 0.75rem;
+  padding: 0;
   font-weight: 700;
 }
 #events .product-card-active {
@@ -118,17 +120,18 @@
   border-radius: 10px;
   position: fixed;
   justify-content: space-evenly;
-  top: 50%;
+  top: 55%;
   left: 50%;
   translate: -50% -50%;
   width: 50%;
+  padding: 10px 0;
   background-color: #fcfcfc;
   border: 1px solid rgb(252, 252, 252);
   box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #events .product-card-active {
     width: 70%;
   }
@@ -136,9 +139,9 @@
 @media only screen and (max-width: 900px) {
   #events .product-card-active {
     width: 95%;
-    translate: -50% -40%;
+    translate: -50% -50%;
     padding: 20px;
-    max-height: calc(100dvh - 125px);
+    max-height: calc(100dvh - 150px);
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: rgb(245, 209, 81) rgb(252, 252, 252);
@@ -146,6 +149,7 @@
 }
 #events .product-card-active .container {
   height: auto;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 900px) {
   #events .product-card-active .container h4 {
@@ -154,8 +158,9 @@
   }
 }
 #events .product-card-active .container .image {
-  width: 100%;
-  min-height: 350px;
+  width: 90%;
+  min-height: 250px;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 900px) {
   #events .product-card-active .container .image {

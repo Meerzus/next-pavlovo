@@ -23,6 +23,16 @@ function CalculateLeadForm(props) {
     const [date, setDate] = useState('')
     const [options, setOptions] = useState('')
 
+    const [isPolicy, setIsPolicy] = useState(false)
+
+    const [firstStep, setFirstStep] = useState(true)
+    const [secondStep, setSecondStep] = useState(false)
+    const [thirdStep, setThirdStep] = useState(false)
+    const [fourthStep, setFourthStep] = useState(false)
+    const [fifthStep, setFifthStep] = useState(false)
+    const [sixthStep, setSixthStep] = useState(false)
+    const [isComplete, setIsComplete] = useState(false)
+
     const router = useRouter()
 
     const phoneInput = (e) => {
@@ -93,6 +103,29 @@ function CalculateLeadForm(props) {
                         <span></span>
                     </button>
 
+                    <div className="steps" style={{
+                        opacity: isComplete ? '0' : '1'
+                    }}>
+                        <span style={{
+                            opacity: firstStep ? '1' : '0.33'
+                        }}>1</span>
+                        <span style={{
+                            opacity: secondStep ? '1' : '0.33'
+                        }}>2</span>
+                        <span style={{
+                            opacity: thirdStep ? '1' : '0.33'
+                        }}>3</span>
+                        <span style={{
+                            opacity: fourthStep ? '1' : '0.33'
+                        }}>4</span>
+                        <span style={{
+                            opacity: fifthStep ? '1' : '0.33'
+                        }}>5</span>
+                        <span style={{
+                            opacity: sixthStep ? '1' : '0.33'
+                        }}>6</span>
+                    </div>
+
                     <div id="productSection">
                         <h4>Выберите повод</h4>
 
@@ -145,7 +178,18 @@ function CalculateLeadForm(props) {
                             <label htmlFor="other">Другое</label>
                         </div>
 
-                        <Link href={!product ? '#productSection' : '#amountOfPeopleSection'}>Далее</Link>
+                        <Link href={!product ? '#productSection' : '#amountOfPeopleSection'}
+                              onClick={() => {
+                                  if (product) {
+                                      setFirstStep(false)
+                                      setSecondStep(true)
+                                      setThirdStep(false)
+                                      setFourthStep(false)
+                                      setFifthStep(false)
+                                      setSixthStep(false)
+                                  }
+                              }}
+                        >Далее</Link>
                     </div>
 
                     <div id="amountOfPeopleSection">
@@ -171,7 +215,18 @@ function CalculateLeadForm(props) {
                             <input type="radio" id="maximum" name="amountOfPeople" value="Больше 20 человек"/>
                             <label htmlFor="maximum">Больше 20 человек</label>
                         </div>
-                        <Link href={!amountOfPeople ? '#amountOfPeopleSection' : '#ageSection'}>Далее</Link>
+                        <Link href={!amountOfPeople ? '#amountOfPeopleSection' : '#ageSection'}
+                              onClick={() => {
+                                  if (amountOfPeople) {
+                                      setFirstStep(false)
+                                      setSecondStep(false)
+                                      setThirdStep(true)
+                                      setFourthStep(false)
+                                      setFifthStep(false)
+                                      setSixthStep(false)
+                                  }
+                              }}
+                        >Далее</Link>
                     </div>
 
                     <div id="ageSection">
@@ -205,7 +260,18 @@ function CalculateLeadForm(props) {
                             <label htmlFor="mix">Смешанный</label>
                         </div>
 
-                        <Link href={!age ? '#ageSection' : '#dateSection'}>Далее</Link>
+                        <Link href={!age ? '#ageSection' : '#dateSection'}
+                              onClick={() => {
+                                  if (age) {
+                                      setFirstStep(false)
+                                      setSecondStep(false)
+                                      setThirdStep(false)
+                                      setFourthStep(true)
+                                      setFifthStep(false)
+                                      setSixthStep(false)
+                                  }
+                              }}
+                        >Далее</Link>
                     </div>
 
                     <div id="dateSection">
@@ -233,7 +299,18 @@ function CalculateLeadForm(props) {
                             <label htmlFor="far">Планируем заранее, еще больше месяца впереди</label>
                         </div>
 
-                        <Link href={!date ? '#dateSection' : '#optionSection'}>Далее</Link>
+                        <Link href={!date ? '#dateSection' : '#optionSection'}
+                              onClick={() => {
+                                  if (date) {
+                                      setFirstStep(false)
+                                      setSecondStep(false)
+                                      setThirdStep(false)
+                                      setFourthStep(false)
+                                      setFifthStep(true)
+                                      setSixthStep(false)
+                                  }
+                              }}
+                        >Далее</Link>
                     </div>
 
                     <div id="optionSection">
@@ -280,7 +357,18 @@ function CalculateLeadForm(props) {
                             <label htmlFor="food">Банкетная зона</label>
                         </div>
 
-                        <Link href={'#callMeSection'}>Далее</Link>
+                        <Link href={'#callMeSection'}
+                              onClick={() => {
+                                  if (date) {
+                                      setFirstStep(false)
+                                      setSecondStep(false)
+                                      setThirdStep(false)
+                                      setFourthStep(false)
+                                      setFifthStep(false)
+                                      setSixthStep(true)
+                                  }
+                              }}
+                        >Далее</Link>
                     </div>
 
                     <div id="callMeSection">
@@ -306,12 +394,21 @@ function CalculateLeadForm(props) {
                         }}
                         />
 
-                        <Link href={!name || !phone ? '#callMeSection' : '#thankYouSection'}
+                        <p>
+                            <input type="checkbox" onClick={() => setIsPolicy(prevState => !prevState)}/>
+                            Я соглашаюсь на обработку персональных данных согласно <Link href={'/'}>
+                            политике конфиденциальности</Link>
+                        </p>
+
+                        <Link href={!name || !phone || !isPolicy? '#callMeSection' : '#thankYouSection'}
                                 onClick={(e) => {
-                                    if (name && phone) sendMessage(e)
+                                    if (name && phone　&& isPolicy) {
+                                        sendMessage(e)
+                                        setIsComplete(true)
+                                    }
                                 }}
                         >
-                            Заказать звонок
+                            Получить расчет + забронировать подарок
                         </Link>
                     </div>
 

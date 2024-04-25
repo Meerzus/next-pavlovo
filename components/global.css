@@ -53,7 +53,7 @@ h1 {
   font-size: 4.21rem;
   margin: 3.158rem 0;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   h1 {
     font-size: 3.158rem;
     margin: 2.369rem 0;
@@ -70,7 +70,7 @@ h2 {
   font-size: 3.158rem;
   margin: 2.369rem 0;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   h2 {
     font-size: 2.369rem;
     margin: 1.777rem 0;
@@ -87,7 +87,7 @@ h3 {
   font-size: 2.369rem;
   margin: 1.777rem 0;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   h3 {
     font-size: 1.777rem;
     margin: 1.333rem 0;
@@ -104,7 +104,7 @@ h4 {
   font-size: 1.777rem;
   margin: 1.333rem 0;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   h4 {
     font-size: 1.333rem;
     margin: 0.75rem 0;
@@ -121,7 +121,7 @@ h5 {
   font-size: 1.333rem;
   margin: 0.75rem 0;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   h5 {
     font-size: 1rem;
     margin: 0.5rem 0;

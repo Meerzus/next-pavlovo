@@ -16,7 +16,7 @@ video {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #program {
     padding: 100px;
   }
@@ -37,7 +37,7 @@ video {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #program .item {
     margin-bottom: 20px;
   }
@@ -87,7 +87,7 @@ video {
   width: 100%;
   text-align: left;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #program .item .container h4 {
     font-size: 1.777rem;
   }
@@ -144,7 +144,7 @@ video {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #program .video-section {
     margin-top: 100px;
   }

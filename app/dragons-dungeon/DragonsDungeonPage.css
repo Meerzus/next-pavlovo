@@ -132,6 +132,7 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-padding: 20px;
+  position: relative;
 }
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container {
@@ -178,26 +179,29 @@
   }
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input {
-  min-width: 40px;
-  width: 40px;
-  min-height: 40px;
-  height: 40px;
+  min-width: 20px;
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
 }
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input {
-    min-width: 30px;
-    width: 30px;
-    min-height: 30px;
-    height: 30px;
+    min-width: 10px;
+    width: 10px;
+    min-height: 10px;
+    height: 10px;
   }
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input:checked {
   color: black;
   filter: grayscale(100%);
 }
+#dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
+  font-size: 0.9rem;
+}
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection p {
@@ -250,17 +254,47 @@
   margin: 0 0 10px;
   text-align: left;
   scale: 1;
+  font-size: 1.333rem;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h6 {
   color: gray;
-}
-#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p {
-  scale: 1;
+  font-size: 0.75rem;
+  margin-bottom: auto;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection input {
   width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection a {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p {
+  scale: 1;
+  font-size: 1rem;
+  display: inline;
+  justify-content: start;
+  align-items: center;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p a {
+  background: transparent;
+  color: rgb(245, 209, 81);
+  border: none;
+  height: auto;
+  width: auto;
+  display: inline;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection {
   align-items: center;
@@ -270,6 +304,44 @@
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection button {
   margin-top: auto;
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container .steps {
+  position: fixed;
+  bottom: 10px;
+  min-width: 275px;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: rgb(252, 252, 252);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+@media only screen and (max-width: 900px) {
+  #dragonsDungeonPage .leadForm-active #calculateForm .container .steps {
+    transform: translateX(0);
+    left: 30px;
+    bottom: 20px;
+  }
+}
+#dragonsDungeonPage .leadForm-active #calculateForm .container .steps span {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(245, 209, 81);
+  color: rgb(252, 252, 252);
+  display: flex;
+  font-weight: 700;
+  font-family: "Montserrat";
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
+}
+@media only screen and (max-width: 900px) {
+  #dragonsDungeonPage .leadForm-active #calculateForm .container .steps span {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 /*# sourceMappingURL=DragonsDungeonPage.css.map */

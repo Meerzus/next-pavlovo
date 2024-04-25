@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 100px 300px;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   #contacts {
     padding: 100px 150px;
   }
