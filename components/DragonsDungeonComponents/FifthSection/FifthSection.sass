@@ -1,7 +1,7 @@
 @import "../../styleVariables"
 
 video
-  margin-top: 100px
+  margin-top: 20px
   @media only screen and (max-width: $bp-phone)
     margin-top: 20px
 
@@ -13,6 +13,8 @@ video
   flex-direction: column
   align-items: center
   justify-content: center
+  h1
+    //font-size: 2.5rem
   @media only screen and (max-width: $bp-tablet)
     padding: 100px
   @media only screen and (max-width: $bp-phone)
@@ -35,7 +37,7 @@ video
       margin-bottom: 50px
     img
       width: 50%
-      height: 500px
+      height: 300px
       object-fit: cover
       border-radius: 10px
       @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -56,18 +58,22 @@ video
       h4
         width: 100%
         text-align: left
+        margin: 0
+        scale: 1
+        font-size: 1.5rem
         @media only screen and (max-width: $bp-tablet)
-          font-size: 1.777rem
+          //font-size: 1.777rem
         @media only screen and (max-width: $bp-tablet-landscape-up)
           text-align: center
         @media only screen and (max-width: $bp-phone)
-          font-size: 1.333rem
+          font-size: 1rem
       p
-        font-size: 1.333rem
+        font-size: 1rem
         width: 100%
         text-align: left
+        scale: 1
         @media only screen and (max-width: $bp-phone)
-          font-size: 1rem
+          font-size: .75rem
     &:nth-child(2n)
       flex-direction: row-reverse
       @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -75,6 +81,7 @@ video
       .container
         align-items: end
         h4
+          width: 100%
           text-align: right
           @media only screen and (max-width: $bp-tablet-landscape-up)
             text-align: center

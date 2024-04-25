@@ -1,5 +1,5 @@
 video {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 900px) {
   video {
@@ -55,7 +55,7 @@ video {
 }
 #program .item img {
   width: 50%;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -86,11 +86,9 @@ video {
 #program .item .container h4 {
   width: 100%;
   text-align: left;
-}
-@media only screen and (max-width: 1400px) {
-  #program .item .container h4 {
-    font-size: 1.777rem;
-  }
+  margin: 0;
+  scale: 1;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 1200px) {
   #program .item .container h4 {
@@ -99,17 +97,18 @@ video {
 }
 @media only screen and (max-width: 900px) {
   #program .item .container h4 {
-    font-size: 1.333rem;
+    font-size: 1rem;
   }
 }
 #program .item .container p {
-  font-size: 1.333rem;
+  font-size: 1rem;
   width: 100%;
   text-align: left;
+  scale: 1;
 }
 @media only screen and (max-width: 900px) {
   #program .item .container p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 #program .item:nth-child(2n) {
@@ -124,6 +123,7 @@ video {
   align-items: end;
 }
 #program .item:nth-child(2n) .container h4 {
+  width: 100%;
   text-align: right;
 }
 @media only screen and (max-width: 1200px) {

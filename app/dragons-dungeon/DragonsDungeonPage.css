@@ -254,12 +254,12 @@
   margin: 0 0 10px;
   text-align: left;
   scale: 1;
-  font-size: 1.333rem;
+  font-size: 1.1rem;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h6 {
   color: gray;
   font-size: 0.75rem;
-  margin-bottom: auto;
+  margin-bottom: 20px;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection input {
   width: 100%;
@@ -269,6 +269,7 @@
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection a {
   font-size: 1rem;
   display: flex;
+  margin-top: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -311,7 +312,7 @@
   min-width: 275px;
   transform: translateX(-50%);
   display: flex;
-  background-color: rgb(252, 252, 252);
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
