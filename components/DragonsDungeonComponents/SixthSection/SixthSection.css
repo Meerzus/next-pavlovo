@@ -55,7 +55,7 @@
   }
 }
 #contacts .item h4 {
-  margin: 0 0 10px;
+  margin: 20px 0 0;
   scale: 1;
 }
 @media only screen and (max-width: 1200px) {
@@ -81,7 +81,6 @@
   width: fit-content;
   flex-direction: column;
   color: rgb(31, 31, 31);
-  margin-bottom: 20px;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item a {

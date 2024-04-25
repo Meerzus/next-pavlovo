@@ -10,7 +10,7 @@ function Comments(props) {
     }, []);
 
     return (
-        <div style={{width: width < 575 ? '300px' : '560px', height: '500px', overflow: 'hidden', position: 'relative', marginTop: '20px'}}>
+        <div style={{width: width < 575 ? '300px' : '560px', height: '400px', overflow: 'hidden', position: 'relative', marginTop: '20px'}}>
             <iframe style={{
                 width: '100%',
                 height: '100%',
