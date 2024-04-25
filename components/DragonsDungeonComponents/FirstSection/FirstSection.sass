@@ -9,12 +9,12 @@
   color: $white
   flex-direction: column
   justify-content: start
-  align-items: flex-end
+  align-items: end
   @media only screen and (max-width: $bp-tablet)
     padding-right: 50px
   @media only screen and (max-width: $bp-phone)
     padding: 100px 10px
-    align-items: end
+    align-items: center
     //min-height: 100dvh
     //min-width: 100dvw
     background-image: url("../../../public/images/dragons-dungeon/hero-banner-small.jpg")
@@ -37,19 +37,30 @@
       height: calc(100dvh)
       object-fit: cover
   h1
-    text-align: center
+    text-align: right
     height: auto
     text-shadow: 2px 2px 5px $black
     width: 55%
-    margin: 0
+    //margin: 0
+    scale: 1
+    margin-right: 50px
+    margin-bottom: 50px
+    font-size: 3rem
     @media only screen and (max-width: $bp-phone)
       width: 100%
+      text-align: center
       font-size: 1.25rem
+      margin-bottom: 20px
+      margin-right: 0
   h3
-    width: 70%
+    scale: 1
+    width: 40%
     text-align: right
     text-shadow: 2px 2px 5px $black
     margin: 0
+    margin-right: 50px
+    margin-bottom: 20px
+    font-size: 1.5rem
     @media only screen and (max-width: $bp-tablet)
       margin-top: auto
     @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -57,8 +68,9 @@
       text-align: right
       margin-top: 50px
     @media only screen and (max-width: $bp-phone)
-      width: 40%
+      width: 100%
       text-align: center
+      margin: 0
       margin-top: 10px
       font-size: .75rem
   a, button
@@ -68,20 +80,22 @@
     color: $black
     background-color: $yellow
     border-radius: 5px
-    outline: 3px solid $yellow
+    outline: 0 solid $yellow
     transition-duration: $transitionDuration
     transition-timing-function: $transitionTimingFunction
-    margin-right: 200px
+    margin-right: 50px
     padding: 0
     @media only screen and (max-width: $bp-tablet)
       margin-top: auto
-      margin-right: 100px
+      margin-right: 50px
     @media only screen and (max-width: $bp-tablet-landscape-up)
-      margin-right: 0
-      margin-top: 50px
+      margin-right: 50px
+      //margin-top: 50px
     @media only screen and (max-width: $bp-phone)
-      margin-top: 10px
+
       width: 40%
+      margin: 0
+      margin-top: 10px
       min-height: 30px
       height: 30px
       font-size: .75rem

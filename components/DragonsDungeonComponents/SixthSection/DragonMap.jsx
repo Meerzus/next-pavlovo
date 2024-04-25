@@ -14,7 +14,7 @@ function DragonMap(props) {
         <YMaps>
             <Map
                 width={width <= 800 ? 300 : width <= 1200 ? 750 : 500}
-                height={width <= 800 ? 300 : 500}
+                height={width <= 800 ? 300 : 400}
                 defaultState={{
                     center: [55.965375, 43.065908],
                     zoom: 17,

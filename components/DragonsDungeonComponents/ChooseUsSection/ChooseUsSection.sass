@@ -8,14 +8,26 @@
   flex-direction: column
   padding: 100px 200px
   @media only screen and (max-width: $bp-tablet)
-    padding: 100px
+    //padding: 100px 200px
   @media only screen and (max-width: $bp-phone)
     padding: 100px 20px
     h1
       font-size: 1.333rem
-  h2, h3
-    width: 100%
-    margin-bottom: 0
+  .reviews
+    margin-top: 100px
+    display: flex
+    justify-content: center
+    align-items: start
+    @media only screen and (max-width: $bp-phone)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    h2, h3
+      width: 50%
+      margin: 0
+      margin-bottom: 0
+      @media only screen and (max-width: $bp-phone)
+        width: 100%
   .container
     width: 80%
     display: flex
@@ -24,7 +36,7 @@
     align-items: center
     gap: 20px
     @media only screen and (max-width: $bp-tablet)
-      width: 100%
+      width: 80%
     @media only screen and (max-width: $bp-tablet-landscape-up)
       gap: 20px
     @media only screen and (max-width: $bp-phone)
@@ -38,6 +50,7 @@
       padding: 20px
       box-shadow: 0 5px 10px 0 rgba($black, 0.25)
       border-radius: 10px
+      @media only screen and (max-width: $bp-tablet)
       @media only screen and (max-width: $bp-tablet-landscape-up)
         width: 100%
       h4
@@ -46,11 +59,11 @@
         display: flex
         align-items: center
         font-size: 1.2rem
-        @media only screen and (max-width: $bp-tablet-landscape-up)
-          min-height: 40px
+        @media only screen and (max-width: $bp-tablet)
+          min-height: 20px
       img
-        width: 75px
-        height: 75px
+        width: 50px
+        height: 50px
         object-fit: contain
         margin: 10px 0
         @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -60,11 +73,11 @@
           width: 100px
           height: 100px
       p
-        font-size: 1rem
-        min-height: 100px
+        font-size: .75rem
+        min-height: 80px
         font-weight: 300
         @media only screen and (max-width: $bp-tablet-landscape-up)
-          min-height: 100px
+          min-height: 120px
         @media only screen and (max-width: $bp-phone)
           max-height: 100px
           font-size: .75rem
@@ -73,7 +86,7 @@
           scrollbar-color: $yellow $white
   button
     margin-top: 50px
-    font-size: 1.777rem
+    font-size: 1.3rem
     height: 75px
     color: $white
     &:hover

@@ -117,7 +117,7 @@
   font-size: 1.333rem;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm {
-  height: 70%;
+  height: 100%;
   width: 75%;
 }
 @media only screen and (max-width: 900px) {
@@ -259,7 +259,6 @@
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection h6 {
   color: gray;
   font-size: 0.75rem;
-  margin-bottom: 20px;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection input {
   width: 100%;
@@ -269,13 +268,13 @@
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection a {
   font-size: 1rem;
   display: flex;
-  margin-top: 30px;
+  margin: 0;
   justify-content: center;
   align-items: center;
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p {
   scale: 1;
-  font-size: 1rem;
+  font-size: 0.75rem;
   display: inline;
   justify-content: start;
   align-items: center;
@@ -289,6 +288,7 @@
 #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p a {
   background: transparent;
   color: rgb(245, 209, 81);
+  font-size: 0.75rem;
   border: none;
   height: auto;
   width: auto;

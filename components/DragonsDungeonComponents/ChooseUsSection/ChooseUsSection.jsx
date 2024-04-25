@@ -68,9 +68,11 @@ function ChooseUsSection(props) {
                 }
             </div>
 
-            <h2>А вот что говорят наши клиенты</h2>
+            <div className="reviews">
+                <h2>А вот что говорят наши клиенты</h2>
 
-            <Comments/>
+                <Comments/>
+            </div>
 
             <LeadTriggerButton text={'Оставить заявку'}/>
         </section>

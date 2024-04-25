@@ -50,10 +50,13 @@
   #contacts .item {
     margin-bottom: 20px;
     padding: 0 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
 #contacts .item h4 {
   margin: 0 0 10px;
+  scale: 1;
 }
 @media only screen and (max-width: 1200px) {
   #contacts .item h4 {
@@ -62,8 +65,8 @@
   }
 }
 #contacts .item p {
-  font-size: 1.333rem;
-  margin-bottom: 50px;
+  font-size: 1rem;
+  scale: 1;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item p {
@@ -72,31 +75,28 @@
   }
 }
 #contacts .item a {
-  font-size: 1.777rem;
+  font-size: 1.3rem;
+  scale: 1;
   display: flex;
   width: fit-content;
   flex-direction: column;
   color: rgb(31, 31, 31);
   margin-bottom: 20px;
-  translate: 30px 0;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item a {
     font-size: 1rem;
-    translate: 20px 0;
   }
-}
-#contacts .item a:nth-child(3) {
-  margin-bottom: 50px;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item a:nth-child(3) {
     margin-bottom: 20px;
+    translate: 0;
   }
 }
 #contacts .item a:after {
   content: "";
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: rgb(31, 31, 31);
   display: flex;
@@ -124,11 +124,12 @@
   }
 }
 #contacts .item:nth-child(2) p {
-  font-size: 1.777rem;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 900px) {
   #contacts .item:nth-child(2) p {
     font-size: 1rem;
+    text-align: center;
   }
 }
 #contacts .item:nth-child(3) {
@@ -157,6 +158,12 @@
 }
 #contacts .any-questions button {
   width: 50%;
+  color: rgb(252, 252, 252);
+  font-size: 0.75rem;
+  padding: 0;
+}
+#contacts .any-questions button:hover {
+  color: rgb(245, 209, 81);
 }
 
 /*# sourceMappingURL=SixthSection.css.map */
