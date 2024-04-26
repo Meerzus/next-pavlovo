@@ -44,8 +44,8 @@ function DragonMap(props) {
                 Организация и проведение детских праздников в Павлово
             </a>
             <iframe src="https://yandex.ru/map-widget/v1/?ll=43.065908%2C55.965376&mode=search&oid=124769354004&ol=biz&z=16.67"
-                    // width={width <= 800 ? '300' : width <= 1200 ? '750' : '500'} height={width <= 800 ? '300' : '400'}
-                    width={width <= 800 ? '560' : width <= 1200 ? '560' : '560'} height={width <= 800 ? '400' : '400'}
+                    width={width <= 800 ? '300' : width <= 1200 ? '750' : '500'} height={width <= 800 ? '300' : '400'}
+                    // width={width <= 800 ? '560' : width <= 1200 ? '560' : '560'} height={width <= 800 ? '400' : '400'}
                     frameBorder="1" allowFullScreen="true" style={{position: 'relative'}}>
             </iframe>
         </div>
