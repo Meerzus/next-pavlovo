@@ -122,7 +122,7 @@ function FifthSection(props) {
                 <h2>Еще остались сомнения?</h2>
                 <h2><span id="dragon">Посмотрите видео и убедитесь</span></h2>
 
-                <Video width={'50%'} height={'60%'}/>
+                <Video width={'70%'} height={'60%'}/>
 
                 <h4>
                     Больше материала у нас в социальных сетях

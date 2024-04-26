@@ -140,7 +140,7 @@ footer a {
 }
 footer a:after {
   content: "";
-  height: 5px;
+  height: 2px;
   width: 100%;
   background-color: rgb(252, 252, 252);
   display: flex;

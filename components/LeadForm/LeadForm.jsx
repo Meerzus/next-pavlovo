@@ -68,7 +68,7 @@ function LeadForm() {
                 document.getElementById('leadForm').classList.remove('leadForm-active')
             }}></div>
             <form>
-                <Image src={lead} alt={'Форма для заявки'} width={320} height={240}/>
+                <Image src={lead} alt={'Форма для заявки'} width={1080} height={720}/>
 
                 <div className="container">
                     <button type={'button'} onClick={() => {
