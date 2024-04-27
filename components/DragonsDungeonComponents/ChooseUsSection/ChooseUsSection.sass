@@ -7,54 +7,65 @@
   align-items: center
   flex-direction: column
   padding: 100px 200px
+  h1
+    font-size: 2rem
+    margin-bottom: 10px
   @media only screen and (max-width: $bp-tablet)
-    //padding: 100px 200px
+    //h1
+    //  font-size: 1.777rem
   @media only screen and (max-width: $bp-phone)
     padding: 100px 20px
     h1
       font-size: 1.333rem
   .reviews
     margin-top: 50px
-    display: flex
+    display: grid
+    grid-template-areas: 'title comments' 'btn comments'
+    grid-template-columns: 45% 55%
+    grid-template-rows: auto auto
     justify-content: center
-    align-items: start
+    align-items: center
+    justify-items: center
+    flex-wrap: wrap
     @media only screen and (max-width: $bp-phone)
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      margin-top: 20px
-    .title
-      margin-top: 100px
-      width: 50%
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      @media only screen and (max-width: $bp-phone)
-        margin-top: 0
-      //width: 100%
-      h2, h3
-        width: 100%
-        margin: 0
-        margin-bottom: 0
-      button
-        margin-top: 50px
-        font-size: 1.3rem
-        height: 75px
-        color: $white
-        &:hover
-          color: $yellow
-      @media only screen and (max-width: $bp-phone)
-        width: 100%
+      grid-template-areas: 'title title' 'comments comments' 'btn btn'
+    //.title
+    //  margin-top: 100px
+    //  width: 50%
+    //  display: flex
+    //  flex-direction: column
+    //  justify-content: center
+    //  align-items: center
+    //  @media only screen and (max-width: $bp-phone)
+    //    margin-top: 0
+    //  //width: 100%
+    h2, h3
+      width: 100%
+      margin: 0
+      margin-bottom: 0
+      grid-area: title
+    .comments
+      grid-area: comments
+    button
+      margin-top: 50px
+      font-size: 1.3rem
+      width: 75%
+      height: 75px
+      color: $white
+      grid-area: btn
+      &:hover
+        color: $yellow
+    @media only screen and (max-width: $bp-phone)
+      width: 100%
   .container
-    width: 90%
+    width: 100%
     display: flex
     flex-wrap: wrap
     justify-content: center
     align-items: center
-    gap: 5px 20px
+    gap: 20px 20px
     @media only screen and (max-width: $bp-tablet)
-      width: 80%
+      width: 100%
     @media only screen and (max-width: $bp-tablet-landscape-up)
       gap: 5px
     @media only screen and (max-width: $bp-phone)
@@ -68,20 +79,21 @@
       padding: 5px 20px
       box-shadow: 0 0px 5px 0 rgba($black, 0.1)
       border-radius: 10px
+      //border: 1px solid red
       @media only screen and (max-width: $bp-tablet)
       @media only screen and (max-width: $bp-tablet-landscape-up)
         width: 100%
       h4
-        min-height: 40px
+        min-height: 50px
         margin: 0
         display: flex
         align-items: center
-        font-size: 1rem
+        font-size: 1.25rem
         @media only screen and (max-width: $bp-tablet)
           //min-height: 40px
       img
-        width: 40px
-        height: 40px
+        width: 50px
+        height: 50px
         object-fit: contain
         margin: 10px 0
         @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -91,10 +103,10 @@
           width: 100px
           height: 100px
       p
-        font-size: .7rem
+        font-size: 1rem
         scale: 1
-        min-height: 65px
-        font-weight: 400
+        min-height: 80px
+        font-weight: 500
         @media only screen and (max-width: $bp-tablet-landscape-up)
           min-height: 120px
         @media only screen and (max-width: $bp-phone)

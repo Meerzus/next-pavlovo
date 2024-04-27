@@ -67,9 +67,15 @@
 #about-us .container button {
   color: rgb(31, 31, 31);
   width: 90%;
+  font-size: 0.9rem;
 }
 #about-us .container button:hover {
   color: rgb(245, 209, 81);
+}
+@media only screen and (max-width: 900px) {
+  #about-us .container button {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=ThirdSection.css.map */

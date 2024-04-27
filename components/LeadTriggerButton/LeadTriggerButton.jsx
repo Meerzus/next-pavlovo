@@ -21,7 +21,7 @@ function LeadTriggerButton({text}) {
         }
     }, []);
 
-    return text === 'Рассчитать стоимость' || text === 'Оставить заявку' ? (
+    return text === 'подарите себе незабываемый праздник' || text === 'Рассчитать стоимость' || text === 'Оставить заявку' ? (
         <button onClick={() => {
             document.getElementById('calculateLeadForm').classList.add('leadForm-active')
         }}>
