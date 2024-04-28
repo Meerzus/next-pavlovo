@@ -165,8 +165,8 @@
 }
 #contacts .any-questions button {
   width: 50%;
-  color: rgb(252, 252, 252);
-  font-size: 0.75rem;
+  color: rgb(31, 31, 31);
+  font-size: 1rem;
   padding: 0;
 }
 #contacts .any-questions button:hover {

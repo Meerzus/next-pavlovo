@@ -11,7 +11,7 @@ function Comments(props) {
 
     return (
         <div className={'comments'}
-            style={{width: width < 575 ? '300px' : '560px', height: width < 575 ? '700px' : '450px', overflow: 'hidden', position: 'relative', marginTop: '20px'}}>
+            style={{width: width < 575 ? '300px' : '500px', height: width < 575 ? '700px' : '450px', overflow: 'hidden', position: 'relative', marginTop: '20px'}}>
             <iframe style={{
                 width: '100%',
                 height: '100%',

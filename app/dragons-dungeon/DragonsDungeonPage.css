@@ -194,10 +194,10 @@
 }
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item input, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input {
-    min-width: 10px;
-    width: 10px;
-    min-height: 10px;
-    height: 10px;
+    min-width: 20px;
+    width: 20px;
+    min-height: 20px;
+    height: 20px;
   }
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item input:checked, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input:checked {
@@ -205,11 +205,11 @@
   filter: grayscale(100%);
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 1200px) {
   #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }
 #dragonsDungeonPage .leadForm-active #calculateForm .container #productSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #amountOfPeopleSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #ageSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #dateSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #callMeSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #optionSection p, #dragonsDungeonPage .leadForm-active #calculateForm .container #thankYouSection p {
