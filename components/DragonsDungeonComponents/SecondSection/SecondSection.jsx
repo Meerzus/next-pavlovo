@@ -58,10 +58,10 @@ function SecondSection(props) {
     return (
         <section id={'events'}>
             <ProductBackground/>
-            <h3>
+            <h2>
                 Повод с вашей стороны, эмоции с нашей! В <span id="dragon">Подземелье Дракона</span> каждое мероприятие
                 становится незабываемым!
-            </h3>
+            </h2>
 
             {
                 products.map(product => {

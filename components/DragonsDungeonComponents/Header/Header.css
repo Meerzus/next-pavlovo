@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../public/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../public/fonts/Montserrat-Regular.ttf");
+}
 header {
   padding: 10px 100px;
   position: fixed;
@@ -38,7 +46,7 @@ header nav {
 }
 header nav a {
   display: flex;
-  font-family: "Montserrat", sans-serif;
+  font-family: "MontserratRegular", sans-serif;
   font-size: 1.333rem;
   flex-direction: column;
   align-items: start;

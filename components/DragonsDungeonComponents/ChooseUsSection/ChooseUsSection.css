@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../public/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../public/fonts/Montserrat-Regular.ttf");
+}
 #chooseUsSection {
   width: 100%;
   display: flex;
@@ -7,7 +15,7 @@
   padding: 100px 200px;
 }
 #chooseUsSection h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 900px) {

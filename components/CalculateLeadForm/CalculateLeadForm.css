@@ -1,3 +1,10 @@
-
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../public/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../public/fonts/Montserrat-Regular.ttf");
+}
 
 /*# sourceMappingURL=CalculateLeadForm.css.map */
