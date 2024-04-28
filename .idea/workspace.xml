@@ -8,32 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/dragons-dungeon/DragonsDungeonPage.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FourthSection/FourthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FourthSection/FourthSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FourthSection/FourthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FourthSection/FourthSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SixthSection/SixthSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LeadForm/LeadForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/LeadForm/LeadForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LeadForm/LeadForm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/LeadForm/LeadForm.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/LeadTriggerButton/LeadTriggerButton.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/global.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/styleVariables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/styleVariables.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +69,7 @@
       <workItem from="1714056531885" duration="10418000" />
       <workItem from="1714142758861" duration="2287000" />
       <workItem from="1714240343214" duration="2139000" />
-      <workItem from="1714304801838" duration="273000" />
+      <workItem from="1714304801838" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -199,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714241854722</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- final">
+      <option name="closed" value="true" />
+      <created>1714305094803</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714305094803</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
