@@ -67,8 +67,6 @@ function CalculateLeadForm({igrolend}) {
         return result
     }
 
-    console.log(options.replace('undefined, ', ''))
-
     const sendMessage = async (e) => {
         e.preventDefault()
         try {
@@ -426,7 +424,11 @@ function CalculateLeadForm({igrolend}) {
                                 onClick={(e) => {
                                     e.preventDefault()
                                     document.getElementById('calculateLeadForm').classList.remove('leadForm-active')
-                                    router.push('/dragons-dungeon')
+                                    if (igrolend) {
+                                        router.push('/igrolend')
+                                    } else {
+                                        router.push('/podzemelye-drakona')
+                                    }
                                 }}
                         >
                             Закрыть
