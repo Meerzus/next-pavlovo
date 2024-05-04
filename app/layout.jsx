@@ -1,4 +1,4 @@
-
+import '@/components/global.sass'
 
 export const metadata = {
   title: "Подземелье Дракона игра-шоу |Праздник в Павлово",

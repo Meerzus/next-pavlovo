@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../public/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../public/fonts/Montserrat-Regular.ttf");
+}
+#igrolendPage {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+#igrolendPage header {
+  background-color: #fdfbfb;
+}
+#igrolendPage header nav a {
+  color: #fbc304;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#igrolendPage #leadForm, #igrolendPage #calculateLeadForm {
+  display: none;
+  z-index: 999;
+}
+#igrolendPage .leadForm-active {
+  display: flex !important;
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#igrolendPage .leadForm-active .lead-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.75);
+  cursor: pointer;
+  display: flex;
+  z-index: 999;
+}
+#igrolendPage .leadForm-active form {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: row;
+  width: 1000px;
+  height: 500px;
+  background-color: rgb(252, 252, 252);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1000;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active form {
+    width: 90%;
+  }
+}
+#igrolendPage .leadForm-active form img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active form img {
+    display: none;
+  }
+}
+#igrolendPage .leadForm-active form .container {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active form .container {
+    width: 100%;
+  }
+}
+#igrolendPage .leadForm-active form .container button:first-child {
+  width: 50px;
+  min-height: 50px;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+#igrolendPage .leadForm-active form .container button:first-child span {
+  min-width: 30px;
+  min-height: 3px;
+  background-color: rgb(31, 31, 31);
+  rotate: 45deg;
+  position: absolute;
+}
+#igrolendPage .leadForm-active form .container button:first-child span:first-child {
+  rotate: -45deg;
+}
+#igrolendPage .leadForm-active form .container button:last-child {
+  width: 100%;
+  margin-top: auto;
+}
+#igrolendPage .leadForm-active form .container p {
+  width: 100%;
+  margin: 40px 0 5px;
+  font-weight: 700;
+  font-size: 1.333rem;
+}
+#igrolendPage .leadForm-active form .container p:after {
+  content: "*";
+  color: red;
+  font-weight: 400;
+  margin-left: 2px;
+}
+#igrolendPage .leadForm-active form .container input {
+  border: 2px solid rgb(31, 31, 31);
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 1.333rem;
+}
+#igrolendPage .leadForm-active #calculateForm {
+  height: 80%;
+  width: 75%;
+}
+@media only screen and (max-width: 900px) {
+  #igrolendPage .leadForm-active #calculateForm {
+    height: 100%;
+    width: 100%;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+  position: relative;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active #calculateForm .container {
+    width: 100%;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection, #igrolendPage .leadForm-active #calculateForm .container #ageSection, #igrolendPage .leadForm-active #calculateForm .container #dateSection, #igrolendPage .leadForm-active #calculateForm .container #callMeSection, #igrolendPage .leadForm-active #calculateForm .container #optionSection, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 100px;
+  padding: 0 50px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 1.333rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active #calculateForm .container #productSection, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection, #igrolendPage .leadForm-active #calculateForm .container #ageSection, #igrolendPage .leadForm-active #calculateForm .container #dateSection, #igrolendPage .leadForm-active #calculateForm .container #callMeSection, #igrolendPage .leadForm-active #calculateForm .container #optionSection, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection {
+    padding: 0 50px 20px 10px;
+    min-height: calc(100% - 50px);
+  }
+}
+@media only screen and (max-width: 900px) {
+  #igrolendPage .leadForm-active #calculateForm .container #productSection h4, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection h4, #igrolendPage .leadForm-active #calculateForm .container #ageSection h4, #igrolendPage .leadForm-active #calculateForm .container #dateSection h4, #igrolendPage .leadForm-active #calculateForm .container #callMeSection h4, #igrolendPage .leadForm-active #calculateForm .container #optionSection h4, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection h4 {
+    scale: 1.2;
+    margin-bottom: 20px;
+  }
+  #igrolendPage .leadForm-active #calculateForm .container #productSection span, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection span, #igrolendPage .leadForm-active #calculateForm .container #ageSection span, #igrolendPage .leadForm-active #calculateForm .container #dateSection span, #igrolendPage .leadForm-active #calculateForm .container #callMeSection span, #igrolendPage .leadForm-active #calculateForm .container #optionSection span, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection span {
+    margin-bottom: 20px;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item {
+    margin-bottom: 20px;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input {
+  min-width: 20px;
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item input, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input {
+    min-width: 20px;
+    width: 20px;
+    min-height: 20px;
+    height: 20px;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item input:checked, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item input:checked {
+  color: black;
+  filter: grayscale(100%);
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  #igrolendPage .leadForm-active #calculateForm .container #productSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #ageSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #dateSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #callMeSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #optionSection .radio-item label, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection .radio-item label {
+    font-size: 1.5rem;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection p, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection p, #igrolendPage .leadForm-active #calculateForm .container #ageSection p, #igrolendPage .leadForm-active #calculateForm .container #dateSection p, #igrolendPage .leadForm-active #calculateForm .container #callMeSection p, #igrolendPage .leadForm-active #calculateForm .container #optionSection p, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection p {
+  margin-top: 0;
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection h5, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection h5, #igrolendPage .leadForm-active #calculateForm .container #ageSection h5, #igrolendPage .leadForm-active #calculateForm .container #dateSection h5, #igrolendPage .leadForm-active #calculateForm .container #callMeSection h5, #igrolendPage .leadForm-active #calculateForm .container #optionSection h5, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection h5 {
+  width: 100%;
+  text-align: start;
+  margin: 0 0 10px;
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection select, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection select, #igrolendPage .leadForm-active #calculateForm .container #ageSection select, #igrolendPage .leadForm-active #calculateForm .container #dateSection select, #igrolendPage .leadForm-active #calculateForm .container #callMeSection select, #igrolendPage .leadForm-active #calculateForm .container #optionSection select, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection select {
+  min-height: 50px;
+  border: 2px solid rgb(245, 209, 81);
+  padding: 10px 20px;
+  font-size: 1.333rem;
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection a, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection a, #igrolendPage .leadForm-active #calculateForm .container #ageSection a, #igrolendPage .leadForm-active #calculateForm .container #dateSection a, #igrolendPage .leadForm-active #calculateForm .container #callMeSection a, #igrolendPage .leadForm-active #calculateForm .container #optionSection a, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection a {
+  margin-top: auto;
+  width: 100%;
+  min-height: 50px;
+  font-size: 1.333rem;
+  font-weight: 700;
+  background-color: rgb(245, 209, 81);
+  border: 2px solid rgb(245, 209, 81);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #ageSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #dateSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #callMeSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #optionSection input[type=range], #igrolendPage .leadForm-active #calculateForm .container #thankYouSection input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  height: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding: 0;
+  border: 1px solid rgb(245, 209, 81);
+  background-color: rgb(245, 209, 81);
+  cursor: pointer;
+}
+#igrolendPage .leadForm-active #calculateForm .container #productSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #ageSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #dateSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #callMeSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #optionSection input[type=range]::-webkit-slider-thumb, #igrolendPage .leadForm-active #calculateForm .container #thankYouSection input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: radial-gradient(circle, rgb(252, 252, 252) 25%, rgb(245, 209, 81) 75%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0px #f5d151;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection h6, #igrolendPage .leadForm-active #calculateForm .container #callMeSection h5 {
+  margin: 0 0 10px;
+  text-align: left;
+  scale: 1;
+  font-size: 1.1rem;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection h6 {
+  color: gray;
+  font-size: 0.75rem;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection a {
+  font-size: 1rem;
+  display: flex;
+  margin: 0;
+  margin-top: auto;
+  translate: 0 -20px;
+  justify-content: center;
+  align-items: center;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection p {
+  scale: 1;
+  font-size: 0.75rem;
+  display: inline;
+  justify-content: start;
+  align-items: center;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection p input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+#igrolendPage .leadForm-active #calculateForm .container #callMeSection p a {
+  background: transparent;
+  color: rgb(245, 209, 81);
+  font-size: 0.75rem;
+  border: none;
+  height: auto;
+  width: auto;
+  display: inline;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
+#igrolendPage .leadForm-active #calculateForm .container #amountOfPeopleSection {
+  align-items: center;
+}
+#igrolendPage .leadForm-active #calculateForm .container #thankYouSection {
+  margin-bottom: 0;
+}
+#igrolendPage .leadForm-active #calculateForm .container #thankYouSection button {
+  margin-top: auto;
+}
+#igrolendPage .leadForm-active #calculateForm .container .steps {
+  position: fixed;
+  bottom: 10px;
+  min-width: 275px;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+@media only screen and (max-width: 900px) {
+  #igrolendPage .leadForm-active #calculateForm .container .steps {
+    transform: translateX(0);
+    left: 30px;
+    bottom: 20px;
+  }
+}
+#igrolendPage .leadForm-active #calculateForm .container .steps span {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(245, 209, 81);
+  color: rgb(252, 252, 252);
+  display: flex;
+  font-weight: 700;
+  font-family: "MontserratRegular";
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
+}
+@media only screen and (max-width: 900px) {
+  #igrolendPage .leadForm-active #calculateForm .container .steps span {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/*# sourceMappingURL=Igrolend.css.map */

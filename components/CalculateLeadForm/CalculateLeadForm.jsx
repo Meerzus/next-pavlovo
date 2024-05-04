@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 
 import lead from '@/public/images/dragons-dungeon/lead-form.jpg'
+import igrolendLead from '@/public/images/igrolend/lead.jpeg'
 import axios from "axios";
 
 // import RangeSlider from 'react-range-slider-input';
@@ -13,7 +14,7 @@ import DateRangePicker from "@/components/DateRangePicker/DateRangePicker";
 import {format} from "date-fns";
 import {useRouter} from "next/navigation";
 
-function CalculateLeadForm(props) {
+function CalculateLeadForm({igrolend}) {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
 
@@ -75,7 +76,7 @@ function CalculateLeadForm(props) {
                 `https://api.telegram.org/bot6644500157:AAFu1FpMWSD_JQ3eshQ2zJnPZxGrtmIBJRM/sendMessage`,
                 {
                     chat_id: '899792725',
-                    text: `Новая заявка!\nИмя: ${name}\nТелефон: ${phone}\nМероприятие: ${product}\nКол-во гостей: ${amountOfPeople}\nВозраст: ${age}\nДата: ${date}\nНаполнение: ${options.replace('undefined, ', '')}`
+                    text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}!\nИмя: ${name}\nТелефон: ${phone}\nМероприятие: ${product}\nКол-во гостей: ${amountOfPeople}\nВозраст: ${age}\nДата: ${date}\nНаполнение: ${options.replace('undefined, ', '')}`
                 }
             );
             document.getElementById('thankYouSection').scrollIntoView()
@@ -93,7 +94,11 @@ function CalculateLeadForm(props) {
             <form
                   id={'calculateForm'}
             >
-                <Image src={lead} alt={'Форма для заявки'} width={1080} height={720}/>
+                {
+                    igrolend ? <Image src={igrolendLead} alt={'Форма для заявки'} width={1080} height={720}/>
+                        : <Image src={lead} alt={'Форма для заявки'} width={1080} height={720}/>
+                }
+
 
                 <div className="container">
                     <button type={'button'} onClick={() => {

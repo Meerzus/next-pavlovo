@@ -1,0 +1,43 @@
+'use client'
+
+import React, {useEffect, useState} from 'react';
+
+function IgrolendComments(props) {
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, []);
+
+    return (
+        <div className={'comments'}
+             style={{width: width < 575 ? '300px' : '500px', height: width < 575 ? '700px' : '450px', overflow: 'hidden', position: 'relative', marginTop: '20px'}}
+        >
+            <iframe style={{
+                    width: '100%',
+                    height: '100%',
+                    border: '1px solid #e6e6e6',
+                    borderRadius: '8px',
+                    boxSizing: 'border-box'
+                }}
+                    src="https://yandex.ru/maps-reviews-widget/181595742435?comments"
+            ></iframe>
+            <a href="https://yandex.ru/maps/org/igrolend/181595742435/" target="_blank"
+               style={{
+                   boxSizing: 'border-box',
+                   textDecoration: 'none',
+                   color: '#b3b3b3',
+                   fontSize: '10px',
+                   fontFamily: 'YS Text,sans-serif',
+                   padding: '0 20px',
+                   position: 'absolute',
+                   bottom: '8px',
+                   width: '100%',
+                   textAlign: 'center',
+                   left: '0'
+               }}>Игролэнд на карте Павлово — Яндекс Карты</a>
+        </div>
+    );
+}
+
+export default IgrolendComments;

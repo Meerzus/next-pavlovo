@@ -8,7 +8,7 @@
 }
 #about-us {
   width: 100%;
-  min-height: 50dvw;
+  min-height: calc(50dvh + 100px);
   background-color: rgb(31, 31, 31);
   color: rgb(252, 252, 252);
   display: flex;
@@ -36,13 +36,14 @@
 #about-us img {
   width: 50%;
   display: flex;
-  height: 100%;
-  min-height: 100%;
+  height: auto;
+  max-height: 50dvw;
   object-fit: cover;
 }
 @media only screen and (max-width: 1200px) {
   #about-us img {
     width: 100%;
+    min-width: 100%;
   }
 }
 #about-us .container {
@@ -67,7 +68,7 @@
   margin: 0;
 }
 #about-us .container p {
-  font-size: 1rem;
+  font-size: 1.333rem;
   width: 100%;
   line-height: 2rem;
   margin-bottom: 0px;
@@ -75,7 +76,7 @@
 #about-us .container button {
   color: rgb(31, 31, 31);
   width: 90%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 #about-us .container button:hover {
   color: rgb(245, 209, 81);

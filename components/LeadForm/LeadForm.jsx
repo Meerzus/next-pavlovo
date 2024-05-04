@@ -4,11 +4,12 @@ import React, {useState} from 'react';
 import Image from "next/image";
 
 import lead from '@/public/images/dragons-dungeon/lead-form.jpg'
+import igrolendLead from '@/public/images/igrolend/lead.jpeg'
 import axios from "axios";
 import {useRouter} from "next/navigation";
 
 
-function LeadForm() {
+function LeadForm({igrolend}) {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
 
@@ -52,10 +53,16 @@ function LeadForm() {
                 `https://api.telegram.org/bot6644500157:AAFu1FpMWSD_JQ3eshQ2zJnPZxGrtmIBJRM/sendMessage`,
                 {
                     chat_id: '899792725',
-                    text: `Новая заявка! Имя: ${name}, телефон: ${phone}`
+                    text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}! Имя: ${name}, телефон: ${phone}`
                 }
             );
-            router.push('/dragons-dungeon')
+            if (igrolend) {
+                router.push('/igrolend')
+                document.getElementById('leadForm').classList.remove('leadForm-active')
+            } else {
+                router.push('/podzemelye-drakona')
+                document.getElementById('leadForm').classList.remove('leadForm-active')
+            }
             // console.log('Message sent:', response.data);
         } catch (error) {
             console.error('Error sending message:', error);
@@ -68,7 +75,10 @@ function LeadForm() {
                 document.getElementById('leadForm').classList.remove('leadForm-active')
             }}></div>
             <form>
-                <Image src={lead} alt={'Форма для заявки'} width={1080} height={720}/>
+                {
+                    igrolend ? <Image src={igrolendLead} alt={'Форма для заявки'} width={1080} height={720}/>
+                        : <Image src={lead} alt={'Форма для заявки'} width={1080} height={720}/>
+                }
 
                 <div className="container">
                     <button type={'button'} onClick={() => {

@@ -8,9 +8,11 @@ import happy from '@/public/images/dragons-dungeon/svg/happy.svg'
 import baby from '@/public/images/dragons-dungeon/svg/baby.svg'
 import balloons from '@/public/images/dragons-dungeon/svg/balloons.svg'
 import guard from '@/public/images/dragons-dungeon/svg/guard.svg'
+import reality from '@/public/images/dragons-dungeon/svg/reality.svg'
 import Image from "next/image";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 import Comments from "@/components/DragonsDungeonComponents/ChooseUsSection/Comments";
+import IgrolendComments from "@/components/DragonsDungeonComponents/ChooseUsSection/IgrolendComments";
 
 const data = [
     {
@@ -57,30 +59,77 @@ const data = [
     },
 ]
 
-function ChooseUsSection(props) {
+const igrolendData = [
+    {
+        id: 1,
+        title: 'Интерактивные аттракционы',
+        text: 'Наши аттракционы превратят ваш день в увлекательное приключение, которое запомнится надолго!',
+        icon: idea,
+    },
+    {
+        id: 2,
+        title: 'Зрелищные проекции',
+        text: 'Огромные зрелищные проекции, на стенах и полу, создадут невероятную атмосферу и захватят вас в мир фантазий и приключений.',
+        icon: format,
+    },
+    {
+        id: 3,
+        title: 'Разнообразие аттракционов',
+        text: 'У нас есть аттракционы для детей и взрослых, каждый найдет здесь что-то интересное и захватывающее!',
+        icon: happy,
+    },
+    {
+        id: 4,
+        title: 'Дополненная реальность',
+        text: 'Погрузитесь в мир дополненной реальности и почувствуйте себя героем собственной истории!',
+        icon: reality,
+    },
+    {
+        id: 5,
+        title: 'Профессиональные аниматоры',
+        text: 'Наши профессиональные аниматоры сделают ваше пребывание у нас еще более веселым и запоминающимся!',
+        icon: guard,
+    },
+    {
+        id: 6,
+        title: 'Зона отдыха',
+        text: 'Отдохните и насладитесь приятным общением в нашей уютной банкетной зоне после увлекательных приключений!',
+        icon: balloons,
+    },
+];
+
+
+function ChooseUsSection({igrolend}) {
     return (
         <section id={'chooseUsSection'}>
             <h1>Почему выбрать стоит <span id="dragon">именно нас</span></h1>
 
             <div className="container">
                 {
-                    data.map(item => {
-                        return <div key={item.id} className={'item'}>
-                            <h4>{item.title}</h4>
-                            <Image src={item.icon} alt={item.title}/>
-                            <p>{item.text}</p>
-                        </div>
-                    })
+                    igrolend ? igrolendData.map(item => {
+                            return <div key={item.id} className={'item'}>
+                                <h4>{item.title}</h4>
+                                <Image src={item.icon} alt={item.title}/>
+                                <p>{item.text}</p>
+                            </div>
+                        })
+                        : data.map(item => {
+                            return <div key={item.id} className={'item'}>
+                                <h4>{item.title}</h4>
+                                <Image src={item.icon} alt={item.title}/>
+                                <p>{item.text}</p>
+                            </div>
+                        })
                 }
             </div>
 
             <div className="reviews">
-                {/*<div className="title">*/}
-                {/*    <h2>А вот что говорят наши клиенты</h2>*/}
-                {/*    <LeadTriggerButton text={'Оставить заявку'}/>*/}
-                {/*</div>*/}
                 <h2>А вот что говорят наши клиенты</h2>
-                <Comments/>
+
+                {
+                    igrolend ? <IgrolendComments/> : <Comments/>
+                }
+
                 <LeadTriggerButton text={'Оставить заявку'}/>
             </div>
 

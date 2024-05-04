@@ -4,14 +4,18 @@ import './Footer.sass'
 import Image from "next/image";
 
 import logo from '@/public/images/logo.png'
+import igrolendLogo from '@/public/images/igrolend/logo.webp'
 import Link from "next/link";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 
-function Footer(props) {
+function Footer({igrolend}) {
     return (
-        <footer>
+        <footer className={igrolend && 'igrolend-color'}>
             <div className="item">
-                <Image src={logo} alt={'Подземелье Дракона'} width={100} height={50}/>
+                {
+                    igrolend ? <Image src={igrolendLogo} alt={'Игролэнд'} width={100} height={50}/>
+                        : <Image src={logo} alt={'Подземелье Дракона'} width={100} height={50}/>
+                }
             </div>
 
             <nav>
@@ -25,7 +29,10 @@ function Footer(props) {
             <div className="item">
                 <Link href={'tel:+79101448287'}>+7 (910) 144-82-87</Link>
 
-                <p>Красноармейская улица, 29, Павлово</p>
+                {
+                    igrolend ? <p>Нижегородская улица, 5А, Павлово</p>
+                        : <p>Красноармейская улица, 29, Павлово</p>
+                }
             </div>
 
             <div className="item">

@@ -148,4 +148,49 @@
   border-radius: 10px;
 }
 
+.first-igrolend {
+  padding: 100px 225px 100px 50px !important;
+  align-items: flex-start !important;
+}
+@media only screen and (max-width: 900px) {
+  .first-igrolend {
+    padding: 100px 20px !important;
+    align-items: center !important;
+    background-image: url("../../../public/images/dragons-dungeon/image.png") !important;
+  }
+}
+.first-igrolend h1 {
+  text-align: left !important;
+  font-size: 2.5rem !important;
+}
+@media only screen and (max-width: 900px) {
+  .first-igrolend h1 {
+    font-size: 1.25rem !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+.first-igrolend h3 {
+  text-align: left !important;
+  margin-top: 20px !important;
+}
+@media only screen and (max-width: 900px) {
+  .first-igrolend h3 {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+.first-igrolend a, .first-igrolend button {
+  margin: 10px 0 0 !important;
+}
+.first-igrolend img {
+  width: 50%;
+  height: auto;
+}
+@media only screen and (max-width: 900px) {
+  .first-igrolend img {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=FirstSection.css.map */
