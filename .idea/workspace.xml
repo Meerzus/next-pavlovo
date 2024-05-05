@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
-      <change beforePath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CalculateLeadForm/CalculateLeadForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "http.proxy",
+    "settings.editor.splitter.proportion": "0.26272914",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -56,6 +58,14 @@
       <recent name="D:\GitHub\next-pavlovo\public\images\dragons-dungeon\svg" />
       <recent name="D:\GitHub\next-pavlovo\components\DragonsDungeonComponents\SecondSection" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +88,9 @@
       <workItem from="1714664709102" duration="7667000" />
       <workItem from="1714679074257" duration="1775000" />
       <workItem from="1714745189010" duration="3664000" />
-      <workItem from="1714817317977" duration="12773000" />
+      <workItem from="1714817317977" duration="13338000" />
+      <workItem from="1714915208642" duration="2351000" />
+      <workItem from="1714923393988" duration="3014000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -224,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714844722364</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- final">
+      <option name="closed" value="true" />
+      <created>1714845182677</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714845182678</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
