@@ -63,7 +63,7 @@ video {
 }
 #program .item img {
   width: 50%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -78,6 +78,10 @@ video {
     height: 200px;
     margin-bottom: 10px;
   }
+}
+#program .item #krasiva_loc {
+  object-fit: cover;
+  object-position: center 90%;
 }
 #program .item .container {
   width: 45%;

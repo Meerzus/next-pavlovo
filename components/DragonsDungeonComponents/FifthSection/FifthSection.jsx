@@ -12,6 +12,10 @@ import music from '@/public/images/dragons-dungeon/music.jpg'
 import animals from '@/public/images/dragons-dungeon/animals.jpg'
 import silver_show from '@/public/images/dragons-dungeon/silver_show.jpg'
 
+import akvagrim from '@/public/images/igrolend/akvagrim.jpg'
+import krasiva_loc from '@/public/images/igrolend/krasiva_loc.jpg'
+import tir from '@/public/images/igrolend/tir.jpg'
+
 import VK from '@/public/images/icons/VK.svg'
 
 import Video from "@/components/DragonsDungeonComponents/FifthSection/Video";
@@ -27,7 +31,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={animals} alt={''} width={640} height={480}/>
+                        <Image src={image} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -62,7 +66,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={animals} alt={''} width={640} height={480}/>
+                        <Image src={tir} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -70,7 +74,7 @@ function FifthSection({igrolend}) {
                             </h4>
 
                             <p>
-                                С помощью специального интерактивного оружия вы можете сражаться с пиратами, зомби,
+                                С помощью специального интерактивного бластера вы можете сражаться с пиратами, зомби,
                                 преступниками и многими другими
                             </p>
                         </div>
@@ -95,7 +99,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={animals} alt={''} width={640} height={480}/>
+                        <Image src={image} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -107,8 +111,6 @@ function FifthSection({igrolend}) {
                                 <br/>
                                 Раскрась любого из персонажей на листе бумаги, отсканируй - и он появится в волшебном
                                 мире на проекции.
-                                <br/>
-                                Покори своими обитателями мир морских глубин.
                             </p>
                         </div>
                     </div>
@@ -131,7 +133,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={animals} alt={''} width={640} height={480}/>
+                        <Image src={image} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -164,7 +166,21 @@ function FifthSection({igrolend}) {
             }
 
             {
-                igrolend ? ''
+                igrolend ? <div className="item">
+                        <Image src={image} alt={''} width={640} height={480}/>
+
+                        <div className="container">
+                            <h4>
+                                <span id="dragon">Неоновая дискотека</span>
+                            </h4>
+
+                            <p>
+                                Наши маленькие гости будут в восторге от яркой и веселой неоновой дискотеки!
+                                Здесь они смогут потанцевать под любимые музыкальные хиты и создать незабываемые
+                                впечатления в компании своих друзей!
+                            </p>
+                        </div>
+                    </div>
                     : <div className="item">
                         <Image src={disco} alt={''} width={640} height={480}/>
 
@@ -182,7 +198,21 @@ function FifthSection({igrolend}) {
             }
 
             {
-                igrolend ? ''
+                igrolend ? <div className="item">
+                        <Image src={akvagrim} alt={''} width={640} height={480}/>
+
+                        <div className="container">
+                            <h4>
+                                <span id="dragon">Аквагрим</span>
+                            </h4>
+
+                            <p>
+                                Дайте вашим детям возможность стать частью сказочного мира благодаря нашему аквагриму!
+                                Наши опытные художники превратят их лица в любимых персонажей из мультфильмов и сказок,
+                                создавая незабываемые образы и волшебные воспоминания.
+                            </p>
+                        </div>
+                    </div>
                     : <div className="item">
                         <Image src={silver_show} alt={''} width={640} height={480}/>
 
@@ -198,6 +228,44 @@ function FifthSection({igrolend}) {
                             </p>
                         </div>
                     </div>
+            }
+
+            {
+                igrolend &&
+                <div className="item">
+                    <Image src={image} alt={''} width={640} height={480}/>
+
+                    <div className="container">
+                        <h4>
+                            <span id="dragon">Мастер-класс</span>
+                        </h4>
+
+                        <p>
+                            Примите участие в увлекательном мастер-классе и раскройте свой талант вместе с нами! Наши
+                            профессиональные инструкторы научат вас создавать потрясающие произведения искусства,
+                            которые запомнятся на всю жизнь!
+                        </p>
+                    </div>
+                </div>
+            }
+
+            {
+                igrolend &&
+                <div className="item">
+                    <Image src={krasiva_loc} alt={''} width={640} height={480} id={'krasiva_loc'}/>
+
+                    <div className="container">
+                        <h4>
+                            <span id="dragon">Красивая локация и яркие фотки</span>
+                        </h4>
+
+                        <p>
+                            Давайте запечатлим ваши незабываемые моменты на фоне нашей красивой локации! Все фотографии
+                            будут такими яркими и веселыми, как ваше настроение в нашем Игролэнде. Получите море
+                            радости и красок в каждом кадре!
+                        </p>
+                    </div>
+                </div>
             }
 
             {

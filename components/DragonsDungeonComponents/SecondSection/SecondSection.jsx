@@ -11,9 +11,11 @@ import graduation from '@/public/images/dragons-dungeon/graduation.jpg'
 import teambuilding from '@/public/images/dragons-dungeon/teambuilding.jpg'
 import fam_weekend from '@/public/images/dragons-dungeon/fam_weekend.jpg'
 
-import holid from '@/public/images/igrolend/igrolendHolidays.jpg'
+// import holid from '@/public/images/igrolend/igrolendHolidays.jpg'
+import holid from '@/public/images/igrolend/kanikuli.jpg'
 import bd from '@/public/images/igrolend/igrolendBD.jpg'
-import grad from '@/public/images/igrolend/igrolendGraduation.jpg'
+// import grad from '@/public/images/igrolend/igrolendGraduation.jpg'
+import grad from '@/public/images/igrolend/vipusknoy.jpg'
 import free from '@/public/images/igrolend/igrolendFreeGame.jpg'
 import vip from '@/public/images/igrolend/igrolendVIP.jpg'
 

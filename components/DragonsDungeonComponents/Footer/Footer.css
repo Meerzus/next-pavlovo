@@ -167,5 +167,8 @@ footer a:hover:after {
   background-color: rgb(245, 209, 81);
   width: 100%;
 }
+footer #igrolend-footer-img {
+  width: 100% !important;
+}
 
 /*# sourceMappingURL=Footer.css.map */

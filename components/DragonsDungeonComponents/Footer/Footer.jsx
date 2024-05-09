@@ -13,7 +13,7 @@ function Footer({igrolend}) {
         <footer className={igrolend && 'igrolend-color'}>
             <div className="item">
                 {
-                    igrolend ? <Image src={igrolendLogo} alt={'Игролэнд'} width={100} height={50}/>
+                    igrolend ? <Image src={igrolendLogo} alt={'Игролэнд'} width={640} height={480} id={'igrolend-footer-img'}/>
                         : <Image src={logo} alt={'Подземелье Дракона'} width={100} height={50}/>
                 }
             </div>

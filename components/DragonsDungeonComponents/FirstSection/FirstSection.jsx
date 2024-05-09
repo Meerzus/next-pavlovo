@@ -4,7 +4,7 @@ import './FirstSection.sass'
 import Image from "next/image";
 
 import logo from '@/public/images/igrolend/logo.webp'
-import logoIgrolend from '@/public/images/dragons-dungeon/image.png'
+import logoIgrolend from '@/public/images/igrolend/banner.webp'
 import banner from '@/public/images/dragons-dungeon/hero-banner.jpg'
 import banner_small from '@/public/images/dragons-dungeon/hero-banner-small.jpg'
 import Link from "next/link";

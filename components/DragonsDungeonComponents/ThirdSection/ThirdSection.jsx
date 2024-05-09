@@ -17,7 +17,7 @@ function ThirdSection({igrolend}) {
 
             {
                 igrolend ? <div className="container">
-                        <h1><span id="dragon">Приветствуем вас в Игролэнде!</span></h1>
+                        <h1><span id="dragon">О нас</span></h1>
 
                         <p>
                             Мы — интерактивный парк развлечений, где фантазии становятся реальностью.

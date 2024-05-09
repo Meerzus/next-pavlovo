@@ -4,7 +4,7 @@ import Image from "next/image";
 import './Header.sass'
 
 import logo from '@/public/images/logo.png'
-import logoIgrolend from '@/public/images/igrolend/logo.jpg'
+import logoIgrolend from '@/public/images/igrolend/logo.webp'
 import Link from "next/link";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 import NavToggle from "@/components/DragonsDungeonComponents/Header/NavToggle";

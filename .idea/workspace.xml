@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/GitHub/next-pavlovo/public/images/dragons-dungeon/svg",
-    "list.type.of.created.stylesheet": "Sass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "http.proxy",
-    "settings.editor.splitter.proportion": "0.26272914",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/next-pavlovo/public/images/dragons-dungeon/svg&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26272914&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\next-pavlovo\public\images\dragons-dungeon\svg" />
@@ -90,7 +107,9 @@
       <workItem from="1714745189010" duration="3664000" />
       <workItem from="1714817317977" duration="13338000" />
       <workItem from="1714915208642" duration="2351000" />
-      <workItem from="1714923393988" duration="3014000" />
+      <workItem from="1714923393988" duration="3047000" />
+      <workItem from="1715255885720" duration="395000" />
+      <workItem from="1715268833459" duration="3406000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -244,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714845182678</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- final">
+      <option name="closed" value="true" />
+      <created>1714927720708</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714927720708</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
