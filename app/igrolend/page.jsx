@@ -13,6 +13,11 @@ import FifthSection from "@/components/DragonsDungeonComponents/FifthSection/Fif
 import SixthSection from "@/components/DragonsDungeonComponents/SixthSection/SixthSection";
 import Footer from "@/components/DragonsDungeonComponents/Footer/Footer";
 
+export const metadata = {
+    title: "Игрoлэнд - детские праздники в Павлово",
+    description: "Игролэнд — это интерактивный парк развлечений, вызывающий бурный восторг у детей и взрослых! У нас фантазии детей становятся реальностью!",
+};
+
 function Page(props) {
     return (
         <main id={'igrolendPage'}>
