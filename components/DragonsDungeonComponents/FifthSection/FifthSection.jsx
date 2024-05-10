@@ -15,6 +15,11 @@ import silver_show from '@/public/images/dragons-dungeon/silver_show.jpg'
 import akvagrim from '@/public/images/igrolend/akvagrim.jpg'
 import krasiva_loc from '@/public/images/igrolend/krasiva_loc.jpg'
 import tir from '@/public/images/igrolend/tir.jpg'
+import pol from '@/public/images/igrolend/pol.jpg'
+import ojiv from '@/public/images/igrolend/ojivshie_risunki.jpg'
+import stena_kidala from '@/public/images/igrolend/stena_kidala.jpg'
+import master_klass from '@/public/images/igrolend/master_klass.jpg'
+import neon_disco from '@/public/images/igrolend/neon_disco.jpg'
 
 import VK from '@/public/images/icons/VK.svg'
 
@@ -31,7 +36,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={image} alt={''} width={640} height={480}/>
+                        <Image src={stena_kidala} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -99,7 +104,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={image} alt={''} width={640} height={480}/>
+                        <Image src={ojiv} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -133,7 +138,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={image} alt={''} width={640} height={480}/>
+                        <Image src={pol} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -167,7 +172,7 @@ function FifthSection({igrolend}) {
 
             {
                 igrolend ? <div className="item">
-                        <Image src={image} alt={''} width={640} height={480}/>
+                        <Image src={neon_disco} alt={''} width={640} height={480}/>
 
                         <div className="container">
                             <h4>
@@ -233,7 +238,7 @@ function FifthSection({igrolend}) {
             {
                 igrolend &&
                 <div className="item">
-                    <Image src={image} alt={''} width={640} height={480}/>
+                    <Image src={master_klass} alt={''} width={640} height={480}/>
 
                     <div className="container">
                         <h4>

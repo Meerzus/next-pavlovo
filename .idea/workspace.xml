@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
+      <change afterPath="$PROJECT_DIR$/public/images/igrolend/master_klass.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/igrolend/neon_disco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/igrolend/ojivshie_risunki.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/igrolend/pol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/igrolend/stena_kidala.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FirstSection/FirstSection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ThirdSection/ThirdSection.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/igrolend/igrolendBD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/igrolendBD.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/igrolend/igrolendFreeGame.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/igrolendFreeGame.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/igrolend/igrolendVIP.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/igrolendVIP.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/igrolend/krasiva_loc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/krasiva_loc.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/igrolend/vipusknoy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/vipusknoy.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/next-pavlovo/public/images/dragons-dungeon/svg&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/ai-trading&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -109,7 +104,9 @@
       <workItem from="1714915208642" duration="2351000" />
       <workItem from="1714923393988" duration="3047000" />
       <workItem from="1715255885720" duration="395000" />
-      <workItem from="1715268833459" duration="3406000" />
+      <workItem from="1715268833459" duration="4099000" />
+      <workItem from="1715337959209" duration="1326000" />
+      <workItem from="1715380546087" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -271,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714927720708</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- final">
+      <option name="closed" value="true" />
+      <created>1715272604446</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1715272604447</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

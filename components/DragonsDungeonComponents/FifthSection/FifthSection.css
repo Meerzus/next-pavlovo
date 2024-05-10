@@ -81,7 +81,7 @@ video {
 }
 #program .item #krasiva_loc {
   object-fit: cover;
-  object-position: center 90%;
+  object-position: center 40%;
 }
 #program .item .container {
   width: 45%;
