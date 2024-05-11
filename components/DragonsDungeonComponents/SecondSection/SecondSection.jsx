@@ -20,6 +20,7 @@ import free from '@/public/images/igrolend/igrolendFreeGame.jpg'
 import vip from '@/public/images/igrolend/igrolendVIP.jpg'
 
 import ProductBackground from "@/components/DragonsDungeonComponents/SecondSection/ProductBackground";
+import TypeWriter from "@/components/Igrolend/TypeWriter/TypeWriter";
 
 const products = [
     {
@@ -97,6 +98,13 @@ const igrolendProducts = [
     },
     {
         id: 5,
+        title: 'Тематическая вечеринка',
+        // image: '/images/dragons-dungeon/teambuilding.jpg',
+        image: vip,
+        description: 'Отправьтесь в захватывающее путешествие по миру фантазии и волшебства вместе с нами. Насладитесь неповторимой атмосферой, яркими персонажами и увлекательными мероприятиями, которые запомнятся на всю жизнь!'
+    },
+    {
+        id: 6,
         title: 'Vip',
         // image: '/images/dragons-dungeon/teambuilding.jpg',
         image: vip,
@@ -110,10 +118,8 @@ function SecondSection({igrolend}) {
             <ProductBackground/>
 
             {
-                igrolend ? <h2>
-                        От вас — повод, от нас — эмоции! В <span id="dragon">Игролэнде </span> каждое мероприятие
-                        превращается в незабываемое приключение!
-                    </h2>
+                igrolend ? <h2>Дети будут в восторге! Праздник в <span id="dragon"> Игролэнде </span> станет
+                        незабываемым для Вашего ребенка!</h2>
                     : <h2>
                         Повод с вашей стороны, эмоции с нашей! В <span id="dragon">Подземелье Дракона</span> каждое
                         мероприятие становится незабываемым!

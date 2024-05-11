@@ -6,6 +6,29 @@
   font-family: "MontserratRegular";
   src: url("../public/fonts/Montserrat-Regular.ttf");
 }
+@keyframes t {
+  0% {
+    background-size: 0 100%;
+    width: 0%;
+    border-right: 0px solid black;
+  }
+  70% {
+    border-right: 1px solid black;
+  }
+  71% {
+    border-right: 0px solid black;
+  }
+  100% {
+    width: 100%;
+    background-size: 0 90%;
+    border-right: 0px solid black;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -200%, 0 0;
+  }
+}
 #events {
   display: grid;
   width: 100%;
@@ -47,6 +70,25 @@
 }
 #events h2 {
   grid-area: title;
+}
+#events #type-writer {
+  width: 0%;
+  grid-area: title;
+  overflow: hidden;
+  border-right: 1px solid black;
+  background: linear-gradient(-90deg, black 1px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(white 0 0) 0 0;
+  background-size: 71ch 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+}
+#events .type-writer {
+  animation: b 0.3s infinite steps(1), t 7.1s steps(71) forwards;
+}
+#events .type-writer .type {
+  display: flex;
+  width: 100dvw;
+  gap: 5px;
 }
 #events #product-1 {
   grid-area: product1;

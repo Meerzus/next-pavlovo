@@ -18,14 +18,26 @@ function Header({igrolend}) {
                     : <Image src={logo} alt={'Подземелье Дракона'} width={100} height={50}/>
             }
 
-            <nav id={'header-nav'}>
-                <Link href={'#events'}>Мероприятия</Link>
-                <Link href={'#about-us'}>О нас</Link>
-                <Link href={'#chooseUsSection'}>Преимущества</Link>
-                <Link href={'#program'}>Программа</Link>
-                <Link href={'#contacts'}>Контакты</Link>
-                <CallMeHeaderNav/>
-            </nav>
+            {
+                igrolend ? <nav id={'header-nav'}>
+                        <Link href={'#events'}>Мероприятия</Link>
+                        <Link href={'#about-us'}>О нас</Link>
+                        <Link href={'#program'}>Программа</Link>
+                        <Link href={'#chooseUsSection'}>Преимущества</Link>
+                        <Link href={'#contacts'}>Контакты</Link>
+                        <CallMeHeaderNav/>
+                    </nav>
+                    : <nav id={'header-nav'}>
+                        <Link href={'#events'}>Мероприятия</Link>
+                        <Link href={'#about-us'}>О нас</Link>
+                        <Link href={'#chooseUsSection'}>Преимущества</Link>
+                        <Link href={'#program'}>Программа</Link>
+                        <Link href={'#contacts'}>Контакты</Link>
+                        <CallMeHeaderNav/>
+                    </nav>
+            }
+
+
 
             <LeadTriggerButton text={'Перезвоните мне'}/>
 

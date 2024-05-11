@@ -10,7 +10,7 @@
   display: flex
   flex-direction: row
   justify-content: start
-  align-items: center
+  align-items: start
   @media only screen and (max-width: $bp-tablet-landscape-up)
     flex-direction: column
   @media only screen and (max-width: $bp-phone)
@@ -27,6 +27,7 @@
     max-height: 50dvw
     //min-height: 100%
     object-fit: cover
+    padding: 100px 0
     @media only screen and (max-width: $bp-tablet-landscape-up)
       width: 100%
       min-width: 100%
@@ -35,7 +36,7 @@
     flex-direction: column
     align-items: center
     width: 50%
-    height: auto
+    height: 100%
     padding: 100px
     @media only screen and (max-width: $bp-tablet-landscape-up)
       width: 100%
@@ -46,12 +47,14 @@
     p
       font-size: 1rem
       width: 100%
-      line-height: 2rem
+      line-height: 1.5rem
     button
       color: $black
       width: 90%
-      font-size: 1rem
+      //font-size: 1rem
       margin-top: 10px
+      padding: 0
+      font-size: .9rem
       &:hover
         color: $yellow
       @media only screen and (max-width: $bp-phone)

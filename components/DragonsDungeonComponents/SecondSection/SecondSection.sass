@@ -1,5 +1,25 @@
 @import "../../styleVariables"
 
+@keyframes t
+  0%
+    background-size: 0 100%
+    width: 0%
+    border-right: 0px solid black
+  70%
+    border-right: 1px solid black
+  71%
+    border-right: 0px solid black
+  100%
+    width: 100%
+    background-size: 0 90%
+    border-right: 0px solid black
+
+
+@keyframes b
+  50%
+    background-position: 0 -200%, 0 0
+
+
 #events
   display: grid
   width: 100%
@@ -8,6 +28,8 @@
   grid-template-areas: 'title title title' 'product1 product2 product3' 'product4 product5 product6'
   grid-template-columns: 33% 33% 33%
   gap: 20px
+  //background: #005F6B
+  //color: #00DFFC
   @media only screen and (max-width: $bp-tablet)
     padding: 100px 150px
   @media only screen and (max-width: $bp-tablet-landscape-up)
@@ -29,6 +51,22 @@
     height: 100dvh
   h2
     grid-area: title
+  #type-writer
+    width: 0%
+    grid-area: title
+    overflow: hidden
+    border-right: 1px solid black
+    background: linear-gradient(-90deg, black 1px, #0000 0) 10px 0, linear-gradient(white 0 0) 0 0
+    background-size: calc(71 * 1ch) 200%
+    -webkit-background-clip: padding-box, text
+    background-clip: padding-box, text
+    background-repeat: no-repeat
+  .type-writer
+    animation: b .3s infinite steps(1), t calc(71 * .1s) steps(71) forwards
+    .type
+      display: flex
+      width: 100dvw
+      gap: 5px
   #product-1
     grid-area: product1
   #product-2

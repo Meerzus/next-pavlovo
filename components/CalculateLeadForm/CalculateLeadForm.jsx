@@ -133,45 +133,57 @@ function CalculateLeadForm({igrolend}) {
                         <h4>Выберите повод</h4>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Детские дни рождения')}
+                             onClick={() => setProduct(igrolend ? 'Каникулы' : 'Детские дни рождения')}
                         >
-                            <input type="radio" id="kids" name="product" value="Детские дни рождения"/>
-                            <label htmlFor="kids">Детские дни рождения</label>
+                            <input type="radio" id="kids" name="product" value={
+                                igrolend ? 'Каникулы' : "Детские дни рождения"}/>
+                            <label htmlFor="kids">{
+                                igrolend ? 'Каникулы' : 'Детские дни рождения'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Взрослые дни рождения')}
+                             onClick={() => setProduct(igrolend ? 'День рождения' : 'Взрослые дни рождения')}
                         >
-                            <input type="radio" id="adults" name="product" value="Взрослые дни рождения"/>
-                            <label htmlFor="adults">Взрослые дни рождения</label>
+                            <input type="radio" id="adults" name="product" value={
+                                igrolend ? 'День рождения' : "Взрослые дни рождения"}/>
+                            <label htmlFor="adults">{
+                                igrolend ? 'День рождения' : 'Взрослые дни рождения'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Каникулы')}
+                             onClick={() => setProduct(igrolend ? 'Выпускной' : 'Каникулы')}
                         >
-                            <input type="radio" id="holidays" name="product" value="Каникулы"/>
-                            <label htmlFor="holidays">Каникулы</label>
+                            <input type="radio" id="holidays" name="product" value={
+                                igrolend ? 'Выпускной' : "Каникулы"}/>
+                            <label htmlFor="holidays">{
+                                igrolend ? 'Выпускной' : 'Каникулы'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Выпускной')}
+                             onClick={() => setProduct(igrolend ? 'Свободная игра' : 'Выпускной')}
                         >
-                            <input type="radio" id="graduation" name="product" value="Выпускной"/>
-                            <label htmlFor="graduation">Выпускной</label>
+                            <input type="radio" id="graduation" name="product" value={
+                                igrolend ? 'Свободная игра' : "Выпускной"}/>
+                            <label htmlFor="graduation">{
+                                igrolend ? 'Свободная игра' : 'Выпускной'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Тимбилдинг')}
+                             onClick={() => setProduct(igrolend ? 'Тематическая вечеринка' : 'Тимбилдинг')}
                         >
-                            <input type="radio" id="team" name="product" value="Тимбилдинг"/>
-                            <label htmlFor="team">Тимбилдинг</label>
+                            <input type="radio" id="team" name="product" value={
+                                igrolend ? 'Тематическая вечеринка' : "Тимбилдинг"}/>
+                            <label htmlFor="team">{
+                                igrolend ? 'Тематическая вечеринка' : 'Тимбилдинг'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setProduct('Семейные выходные')}
+                             onClick={() => setProduct(igrolend ? 'VIP' : 'Семейные выходные')}
                         >
-                            <input type="radio" id="weekend" name="product" value="Семейные выходные"/>
-                            <label htmlFor="weekend">Семейные выходные</label>
+                            <input type="radio" id="weekend" name="product" value={
+                                igrolend ? 'VIP' : "Семейные выходные"}/>
+                            <label htmlFor="weekend">{
+                                igrolend ? 'VIP' : 'Семейные выходные'}</label>
                         </div>
 
                         <div className={'radio-item'}

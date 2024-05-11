@@ -29,9 +29,9 @@ function Page(props) {
 
             <ThirdSection igrolend={true}/>
 
-            <ChooseUsSection igrolend={true}/>
-
             <FifthSection igrolend={true}/>
+
+            <ChooseUsSection igrolend={true}/>
 
             <SixthSection igrolend={true}/>
 
