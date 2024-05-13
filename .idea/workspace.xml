@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/igrolend/logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/igrolend/logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1715380546087" duration="1438000" />
       <workItem from="1715458080863" duration="7722000" />
       <workItem from="1715511309241" duration="16000" />
-      <workItem from="1715620982643" duration="4347000" />
+      <workItem from="1715620982643" duration="4545000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -299,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715624095561</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- final">
+      <option name="closed" value="true" />
+      <created>1715625365307</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715625365308</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
