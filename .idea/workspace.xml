@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/FifthSection.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +94,7 @@
       <workItem from="1715380546087" duration="1438000" />
       <workItem from="1715458080863" duration="7722000" />
       <workItem from="1715511309241" duration="16000" />
-      <workItem from="1715620982643" duration="4545000" />
+      <workItem from="1715620982643" duration="5210000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />
@@ -307,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715625365308</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="- final">
+      <option name="closed" value="true" />
+      <created>1715625567814</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715625567814</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
