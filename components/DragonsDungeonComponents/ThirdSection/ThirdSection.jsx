@@ -3,7 +3,7 @@ import React from 'react';
 import './ThirdSection.sass'
 
 import image from '@/public/images/dragons-dungeon/third-section.jpg'
-import igrolendImage from '@/public/images/igrolend/aboutUS.jpeg'
+import igrolendImage from '@/public/images/igrolend/aboutUS.jpg'
 import Image from "next/image";
 import LeadTriggerButton from "@/components/LeadTriggerButton/LeadTriggerButton";
 

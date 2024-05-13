@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 
 import lead from '@/public/images/dragons-dungeon/lead-form.jpg'
-import igrolendLead from '@/public/images/igrolend/lead.jpeg'
+import igrolendLead from '@/public/images/igrolend/lead.jpg'
 import axios from "axios";
 
 // import RangeSlider from 'react-range-slider-input';
@@ -74,7 +74,7 @@ function CalculateLeadForm({igrolend}) {
                 `https://api.telegram.org/bot6644500157:AAFu1FpMWSD_JQ3eshQ2zJnPZxGrtmIBJRM/sendMessage`,
                 {
                     chat_id: '899792725',
-                    text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}!\nИмя: ${name}\nТелефон: ${phone}\nМероприятие: ${product}\nКол-во гостей: ${amountOfPeople}\nВозраст: ${age}\nДата: ${date}\nНаполнение: ${options.replace('undefined, ', '')}`
+                    text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}!\nИмя: ${name}\nТелефон: ${phone}\nМероприятие: ${product}\nКол-во гостей: ${amountOfPeople}\nВозраст: ${age}\nДата: ${date}\n${igrolend ? `Продолжение программы: ${options.replace('undefined, ', '')}` : `Наполнение: ${options.replace('undefined, ', '')}`}`
                 }
             );
             document.getElementById('thankYouSection').scrollIntoView()
@@ -248,31 +248,31 @@ function CalculateLeadForm({igrolend}) {
                         <h4>Возраст гостей</h4>
 
                         <div className={'radio-item'}
-                             onClick={() => setAge('Дети (от 7 до 10 лет)')}
+                             onClick={() => setAge(igrolend ? '3-5 лет' : "Дети (от 7 до 10 лет)")}
                         >
-                            <input type="radio" id="kid" name="amountOfPeople" value="Дети (от 7 до 10 лет)"/>
-                            <label htmlFor="kid">Дети (от 7 до 10 лет)</label>
+                            <input type="radio" id="kid" name="amountOfPeople" value={igrolend ? '3-5 лет' : "Дети (от 7 до 10 лет)"}/>
+                            <label htmlFor="kid">{igrolend ? '3-5 лет' : 'Дети (от 7 до 10 лет)'}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setAge('Подростки (от 11 до 18 лет)')}
+                             onClick={() => setAge(igrolend ? '6-8 лет' : "Подростки (от 11 до 18 лет)")}
                         >
-                            <input type="radio" id="teen" name="age" value="Подростки (от 11 до 18 лет)"/>
-                            <label htmlFor="teen">Подростки (от 11 до 18 лет)</label>
+                            <input type="radio" id="teen" name="age" value={igrolend ? '6-8 лет' : "Подростки (от 11 до 18 лет)"}/>
+                            <label htmlFor="teen">{igrolend ? '6-8 лет' : "Подростки (от 11 до 18 лет)"}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setAge('Взрослые (от 18 лет)')}
+                             onClick={() => setAge(igrolend ? '9-13 лет' : "Взрослые (от 18 лет)")}
                         >
-                            <input type="radio" id="adult" name="age" value="Взрослые (от 18 лет)"/>
-                            <label htmlFor="adult">Взрослые (от 18 лет)</label>
+                            <input type="radio" id="adult" name="age" value={igrolend ? '9-13 лет' : "Взрослые (от 18 лет)"}/>
+                            <label htmlFor="adult">{igrolend ? '9-13 лет' : "Взрослые (от 18 лет)"}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={() => setAge('Смешанный')}
+                             onClick={() => setAge(igrolend ? 'Старше 13 лет' : "Смешанный")}
                         >
-                            <input type="radio" id="mix" name="age" value="Смешанный"/>
-                            <label htmlFor="mix">Смешанный</label>
+                            <input type="radio" id="mix" name="age" value={igrolend ? 'Старше 13 лет' : "Смешанный"}/>
+                            <label htmlFor="mix">{igrolend ? 'Старше 13 лет' : "Смешанный"}</label>
                         </div>
 
                         <Link href={!age ? '#ageSection' : '#dateSection'}
@@ -329,48 +329,64 @@ function CalculateLeadForm({igrolend}) {
                     </div>
 
                     <div id="optionSection">
-                        <h4>чем хотите дополнить праздник?</h4>
+                        <h4>{igrolend ? 'Продолжение программы' : "чем хотите дополнить праздник?"}</h4>
 
-                        <h5>(выберите один или несколько)</h5>
+                        {!igrolend && <h5>(выберите один или несколько)</h5>}
 
                         <div className={'radio-item'}
-                             onClick={(e) => setOptions(prevState => {
-                                 if (!options.includes(e.target.value)) {
-                                     return prevState + `${e.target.value}, `
-                                 } else {
-                                     return options.replace(`${e.target.value}, `, '')
-                                 }
-                             })}
+                             onClick={(e) => setOptions(
+                                 igrolend ? '1,5 часа' : prevState => {
+                                     if (!options.includes(e.target.value)) {
+                                         return prevState + `${e.target.value}, `
+                                     } else {
+                                         return options.replace(`${e.target.value}, `, '')
+                                     }
+                                 })}
                         >
-                            <input type="checkbox" id="disco" name="options" value="Дискотека"/>
-                            <label htmlFor="disco">Дискотека</label>
+                            <input type={igrolend ? 'radio' : "checkbox"} id="disco" name="options" value={igrolend ? '1,5 часа' : "Дискотека"}/>
+                            <label htmlFor="disco">{igrolend ? '1,5 часа' : "Дискотека"}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={(e) => setOptions(prevState => {
-                                 if (!options.includes(e.target.value)) {
-                                     return prevState + `${e.target.value}, `
-                                 } else {
-                                     return options.replace(`${e.target.value}, `, '')
+                             onClick={(e) => setOptions(
+                                 igrolend ? '2 часа' : prevState => {
+                                     if (!options.includes(e.target.value)) {
+                                         return prevState + `${e.target.value}, `
+                                     } else {
+                                         return options.replace(`${e.target.value}, `, '')
+                                     }
                                  }
-                             })}
+                                 )}
                         >
-                            <input type="checkbox" id="silver" name="options" value="Серебряное шоу"/>
-                            <label htmlFor="silver">Серебряное шоу</label>
+                            <input type={igrolend ? 'radio' : "checkbox"} id="silver" name="options" value={igrolend ? '2 часа' : "Серебряное шоу"}/>
+                            <label htmlFor="silver">{igrolend ? '2 часа' : "Серебряное шоу"}</label>
                         </div>
 
                         <div className={'radio-item'}
-                             onClick={(e) => setOptions(prevState => {
-                                 if (!options.includes(e.target.value)) {
-                                     return prevState + `${e.target.value}, `
-                                 } else {
-                                     return options.replace(`${e.target.value}, `, '')
+                             onClick={(e) => setOptions(
+                                 igrolend ? '2,5 часа' : prevState => {
+                                     if (!options.includes(e.target.value)) {
+                                         return prevState + `${e.target.value}, `
+                                     } else {
+                                         return options.replace(`${e.target.value}, `, '')
+                                     }
                                  }
-                             })}
+                                 )}
                         >
-                            <input type="checkbox" id="food" name="options" value="Банкетная зона"/>
-                            <label htmlFor="food">Банкетная зона</label>
+                            <input type={igrolend ? 'radio' : "checkbox"} id="food" name="options" value={igrolend ? '2,5 часа' : "Банкетная зона"}/>
+                            <label htmlFor="food">{igrolend ? '2,5 часа' : "Банкетная зона"}</label>
                         </div>
+
+                        {
+                            igrolend &&
+                            <div className={'radio-item'}
+                                 onClick={(e) => setOptions('3 часа')}
+                            >
+                                <input type='radio' id="hours" name="options"
+                                       value='3 часа'/>
+                                <label htmlFor="hours">3 часа</label>
+                            </div>
+                        }
 
                         <Link href={'#callMeSection'}
                               onClick={() => {
