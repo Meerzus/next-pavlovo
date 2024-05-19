@@ -52,6 +52,16 @@ footer #contact-dev a {
 footer #contact-dev a:after {
   height: 2px;
 }
+footer #contact-ip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer #contact-ip p {
+  text-align: center;
+}
 footer .item {
   width: 25%;
   display: flex;
@@ -169,6 +179,11 @@ footer a:hover:after {
 }
 footer #igrolend-footer-img {
   width: 100% !important;
+}
+@media only screen and (max-width: 1200px) {
+  footer #igrolend-footer-img {
+    width: 50% !important;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

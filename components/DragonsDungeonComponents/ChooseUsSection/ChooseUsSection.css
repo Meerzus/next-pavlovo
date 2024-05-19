@@ -116,20 +116,20 @@
   justify-content: center;
   font-size: 1.25rem;
 }
-#chooseUsSection .container .item img {
+#chooseUsSection .container .item img, #chooseUsSection .container .item svg {
   width: 50px;
   height: 50px;
   object-fit: contain;
   margin: 10px 0;
 }
 @media only screen and (max-width: 1200px) {
-  #chooseUsSection .container .item img {
+  #chooseUsSection .container .item img, #chooseUsSection .container .item svg {
     width: 40px;
     height: 40px;
   }
 }
 @media only screen and (max-width: 900px) {
-  #chooseUsSection .container .item img {
+  #chooseUsSection .container .item img, #chooseUsSection .container .item svg {
     width: 100px;
     height: 100px;
   }

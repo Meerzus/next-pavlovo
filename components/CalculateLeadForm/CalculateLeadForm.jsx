@@ -73,7 +73,7 @@ function CalculateLeadForm({igrolend}) {
             const response = await axios.post(
                 `https://api.telegram.org/bot6644500157:AAFu1FpMWSD_JQ3eshQ2zJnPZxGrtmIBJRM/sendMessage`,
                 {
-                    chat_id: '899792725',
+                    chat_id: '803550408',
                     text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}!\nИмя: ${name}\nТелефон: ${phone}\nМероприятие: ${product}\nКол-во гостей: ${amountOfPeople}\nВозраст: ${age}\nДата: ${date}\n${igrolend ? `Продолжение программы: ${options.replace('undefined, ', '')}` : `Наполнение: ${options.replace('undefined, ', '')}`}`
                 }
             );

@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9448eb73-8f15-4816-9334-315ddd95fed0" name="Changes" comment="- final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/FifthSection/Video.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/ChooseUsSection/ChooseUsSection.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/Footer/Footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/DragonsDungeonComponents/SecondSection/SecondSection.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +109,7 @@
       <workItem from="1715659578143" duration="19000" />
       <workItem from="1715676160584" duration="549000" />
       <workItem from="1716025149617" duration="3434000" />
+      <workItem from="1716111940581" duration="3586000" />
     </task>
     <task id="LOCAL-00001" summary="- init">
       <option name="closed" value="true" />

@@ -52,7 +52,7 @@ function LeadForm({igrolend}) {
             const response = await axios.post(
                 `https://api.telegram.org/bot6644500157:AAFu1FpMWSD_JQ3eshQ2zJnPZxGrtmIBJRM/sendMessage`,
                 {
-                    chat_id: '899792725',
+                    chat_id: '803550408',
                     text: `Новая заявка ${igrolend ? 'Игролэнд' : 'Подземелье Дракона'}! Имя: ${name}, телефон: ${phone}`
                 }
             );

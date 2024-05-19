@@ -71,17 +71,6 @@
 #events h2 {
   grid-area: title;
 }
-#events #type-writer {
-  width: 0%;
-  grid-area: title;
-  overflow: hidden;
-  border-right: 1px solid black;
-  background: linear-gradient(-90deg, black 1px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(white 0 0) 0 0;
-  background-size: 71ch 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-}
 #events .type-writer {
   animation: b 0.3s infinite steps(1), t 7.1s steps(71) forwards;
 }
@@ -138,7 +127,7 @@
 #events .product-card .container .image {
   height: 260px;
   min-height: 260px;
-  width: 80%;
+  width: 95%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -152,6 +141,7 @@
   min-height: 260px;
   width: auto;
   object-fit: cover;
+  object-position: 40% 50%;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.2, 0.5, 0, 1);
 }

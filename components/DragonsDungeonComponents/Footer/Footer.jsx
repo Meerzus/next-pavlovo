@@ -13,7 +13,8 @@ function Footer({igrolend}) {
         <footer className={igrolend && 'igrolend-color'}>
             <div className="item">
                 {
-                    igrolend ? <Image src={igrolendLogo} alt={'Игролэнд'} width={640} height={480} id={'igrolend-footer-img'}/>
+                    igrolend ?
+                        <Image src={igrolendLogo} alt={'Игролэнд'} width={640} height={480} id={'igrolend-footer-img'}/>
                         : <Image src={logo} alt={'Подземелье Дракона'} width={100} height={50}/>
                 }
             </div>
@@ -37,6 +38,13 @@ function Footer({igrolend}) {
 
             <div className="item">
                 <LeadTriggerButton text={'Оставить заявку'}/>
+            </div>
+
+            <div id={'contact-ip'}>
+                <p>ИП: Стародубова Елена Анатольевна</p>
+                <p>ИНН: 525205092488</p>
+                <p>ОГРНИП: 323527500100892</p>
+                <p>Расчётный счёт: 40802 810 3 4200 0052833</p>
             </div>
 
             <div id={'contact-dev'}>

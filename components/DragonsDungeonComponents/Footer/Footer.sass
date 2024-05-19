@@ -33,6 +33,14 @@ footer
       font-size: 1rem
       &:after
         height: 2px
+  #contact-ip
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    p
+      text-align: center
   .item
     width: 25%
     display: flex
@@ -110,3 +118,5 @@ footer
         width: 100%
   #igrolend-footer-img
     width: 100% !important
+    @media only screen and (max-width: $bp-tablet-landscape-up)
+      width: 50% !important
