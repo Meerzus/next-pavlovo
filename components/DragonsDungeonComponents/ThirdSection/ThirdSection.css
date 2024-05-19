@@ -37,10 +37,10 @@
 #about-us img {
   width: 50%;
   display: flex;
-  height: auto;
+  height: 100dvh;
   max-height: 50dvw;
   object-fit: cover;
-  padding: 100px 0;
+  padding: 75px 0;
 }
 @media only screen and (max-width: 1200px) {
   #about-us img {
